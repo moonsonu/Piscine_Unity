@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{D0B7D4D1-18BF-5A1A-75A8-55B2ECF96997}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ex04/Scripts/Player.cs">
+    <Files>
+      <File FileName="Assets/ex04/Scripts/Player.cs" Line="11" Column="1" />
+      <File FileName="Assets/ex04/Scripts/PongBall.cs" Line="44" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
