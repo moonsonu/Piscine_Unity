@@ -32,12 +32,12 @@ public class playerScript_ex02 : MonoBehaviour
         colT = tg.GetComponent<BoxCollider2D>();
         colJ = jg.GetComponent<BoxCollider2D>();
         colC = cg.GetComponent<BoxCollider2D>();
-        speed[0] = 4f;
-        speed[1] = 5f;
-        speed[2] = 3f;
-        jump[0] = 6.5f;
+        speed[0] = 5f;
+        speed[1] = 6f;
+        speed[2] = 4f;
+        jump[0] = 7.5f;
         jump[1] = 10f;
-        jump[2] = 3f;
+        jump[2] = 5f;
         i = 0;
         IsGround = true;
         colT.isTrigger = false;
