@@ -25,7 +25,6 @@ public class MovingObject : MonoBehaviour
             runSound.Play();
             animator.SetBool("Walking", true);
             vector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(Input.mousePosition);
             animator.SetFloat("DirX", vector.x);
             animator.SetFloat("DirY", vector.y);
             vector.z = transform.position.z;
