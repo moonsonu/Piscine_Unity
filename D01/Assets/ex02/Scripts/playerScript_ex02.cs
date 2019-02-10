@@ -9,14 +9,21 @@ public class playerScript_ex02 : MonoBehaviour
     public Exit ThomasExit;
     public Exit JohnExit;
     public Exit ClaireExit;
+    public GameObject Thomas;
+    public GameObject John;
+    public GameObject Claire;
     public GameObject tg;
     public GameObject jg;
     public GameObject cg;
 
     private Rigidbody2D rb;
+    private Rigidbody2D tr;
+    private Rigidbody2D jr;
+    private Rigidbody2D cr;
     private BoxCollider2D colT;
     private BoxCollider2D colJ;
     private BoxCollider2D colC;
+
     private float moveInput;
     private float[] speed = new float[3];
     private float[] jump = new float[3];
@@ -29,9 +36,14 @@ public class playerScript_ex02 : MonoBehaviour
     void Start()
     {
         currentPlayer = GameObject.Find("Thomas");
+        tr = Thomas.GetComponent<Rigidbody2D>();
+        jr = John.GetComponent<Rigidbody2D>();
+        cr = Claire.GetComponent<Rigidbody2D>();
+
         colT = tg.GetComponent<BoxCollider2D>();
         colJ = jg.GetComponent<BoxCollider2D>();
         colC = cg.GetComponent<BoxCollider2D>();
+
         speed[0] = 5f;
         speed[1] = 6f;
         speed[2] = 4f;
@@ -40,6 +52,11 @@ public class playerScript_ex02 : MonoBehaviour
         jump[2] = 5f;
         i = 0;
         IsGround = true;
+
+        tr.isKinematic = false;
+        jr.isKinematic = true;
+        cr.isKinematic = true;
+
         colT.isTrigger = false;
         colJ.isTrigger = true;
         colC.isTrigger = true;
@@ -66,7 +83,13 @@ public class playerScript_ex02 : MonoBehaviour
         if (Input.GetKey("1"))
         {
             i = 0;
+            rb.isKinematic = true;
             currentPlayer = GameObject.Find("Thomas");
+            rb.isKinematic = false;
+            //tr.isKinematic = false;
+            jr.isKinematic = true;
+            cr.isKinematic = true;
+
             colT.isTrigger = false;
             colJ.isTrigger = true;
             colC.isTrigger = true;
@@ -74,7 +97,13 @@ public class playerScript_ex02 : MonoBehaviour
         else if (Input.GetKey("2"))
         {
             i = 1;
+            rb.isKinematic = true;
             currentPlayer = GameObject.Find("John");
+            rb.isKinematic = false;
+            tr.isKinematic = true;
+            //jr.isKinematic = false;
+            cr.isKinematic = true;
+
             colJ.isTrigger = false;
             colT.isTrigger = true;
             colC.isTrigger = true;
@@ -82,7 +111,13 @@ public class playerScript_ex02 : MonoBehaviour
         else if (Input.GetKey("3"))
         {
             i = 2;
+            rb.isKinematic = true;
             currentPlayer = GameObject.Find("Claire");
+            rb.isKinematic = false;
+            tr.isKinematic = true;
+            jr.isKinematic = true;
+            //cr.isKinematic = false;
+
             colC.isTrigger = false;
             colJ.isTrigger = true;
             colT.isTrigger = true;

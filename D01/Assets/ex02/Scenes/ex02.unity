@@ -231,8 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ecc65332599427b9a8f92e79c84b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeTag: Claire
-  groundIn: 0
 --- !u!1 &37110465
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,8 +793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ecc65332599427b9a8f92e79c84b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeTag: John
-  groundIn: 0
 --- !u!1 &1012607054
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +908,9 @@ MonoBehaviour:
   ThomasExit: {fileID: 373564748}
   JohnExit: {fileID: 37110468}
   ClaireExit: {fileID: 1132113443}
+  Thomas: {fileID: 1754976662}
+  John: {fileID: 1112025556}
+  Claire: {fileID: 2114589270}
   tg: {fileID: 1278060095}
   jg: {fileID: 866489000}
   cg: {fileID: 2225593}
@@ -1263,8 +1262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ecc65332599427b9a8f92e79c84b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeTag: Thomas
-  groundIn: 0
 --- !u!1 &1657590204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1404,9 @@ MonoBehaviour:
   ThomasExit: {fileID: 373564748}
   JohnExit: {fileID: 37110468}
   ClaireExit: {fileID: 1132113443}
+  Thomas: {fileID: 1754976662}
+  John: {fileID: 1112025556}
+  Claire: {fileID: 2114589270}
   tg: {fileID: 1278060095}
   jg: {fileID: 866489000}
   cg: {fileID: 2225593}
@@ -1661,6 +1661,9 @@ MonoBehaviour:
   ThomasExit: {fileID: 373564748}
   JohnExit: {fileID: 37110468}
   ClaireExit: {fileID: 1132113443}
+  Thomas: {fileID: 1754976662}
+  John: {fileID: 1112025556}
+  Claire: {fileID: 2114589270}
   tg: {fileID: 1278060095}
   jg: {fileID: 866489000}
   cg: {fileID: 2225593}

@@ -14,14 +14,20 @@ public class playerScript_ex00 : MonoBehaviour
     void Start()
     {
         currentPlayer = GameObject.Find("Thomas");
-
+        rb = currentPlayer.GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        rb = currentPlayer.GetComponent<Rigidbody2D>();
+
         moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if(Input.GetKey("right"))
+            //rb.AddForce(Vector2.left * speed * Time.deltaTime);
+        //currentPlayer.transform.Translate(Vector3.right * speed * Time.deltaTime);
+        //if (Input.GetKey("left"))
+            //rb.AddForce(Vector2.right * speed * Time.deltaTime);
+            //currentPlayer.transform.Translate(Vector3.left * speed * Time.deltaTime);
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         if (Input.GetKey("1"))
             currentPlayer = GameObject.Find("Thomas");
         else if (Input.GetKey("2"))

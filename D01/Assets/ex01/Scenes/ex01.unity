@@ -879,6 +879,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 1112025556}
+  Thomas: {fileID: 1754976662}
+  John: {fileID: 1112025556}
+  Claire: {fileID: 2114589270}
   ThomasExit: {fileID: 373564748}
   JohnExit: {fileID: 37110468}
   ClaireExit: {fileID: 1132113443}
@@ -1356,6 +1359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 1754976662}
+  Thomas: {fileID: 1754976662}
+  John: {fileID: 1112025556}
+  Claire: {fileID: 2114589270}
   ThomasExit: {fileID: 373564748}
   JohnExit: {fileID: 37110468}
   ClaireExit: {fileID: 1132113443}
@@ -1607,6 +1613,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 2114589270}
+  Thomas: {fileID: 1754976662}
+  John: {fileID: 1112025556}
+  Claire: {fileID: 2114589270}
   ThomasExit: {fileID: 373564748}
   JohnExit: {fileID: 37110468}
   ClaireExit: {fileID: 1132113443}

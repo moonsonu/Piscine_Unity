@@ -34,7 +34,7 @@ public class Turret : MonoBehaviour
     {
 
         bulletTimer += Time.deltaTime;
-        Debug.Log(bulletTimer);
+
         if (bulletTimer <= shootInterval)
         {
             if (attack)

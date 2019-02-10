@@ -6,11 +6,19 @@ using UnityEngine.SceneManagement;
 public class playerScript_ex01 : MonoBehaviour
 {
     public GameObject currentPlayer;
+
+    public GameObject Thomas;
+    public GameObject John;
+    public GameObject Claire;
+
     public Exit ThomasExit;
     public Exit JohnExit;
     public Exit ClaireExit;
 
     private Rigidbody2D rb;
+    private Rigidbody2D tr;
+    private Rigidbody2D jr;
+    private Rigidbody2D cr;
     private float moveInput;
     private float[] speed = new float[3];
     private float[] jump = new float[3];
@@ -22,15 +30,21 @@ public class playerScript_ex01 : MonoBehaviour
     void Start()
     {
         currentPlayer = GameObject.Find("Thomas");
-        speed[0] = 4f;
-        speed[1] = 5f;
-        speed[2] = 3f;
-        jump[0] = 6.5f;
+        speed[0] = 5f;
+        speed[1] = 6f;
+        speed[2] = 4f;
+        jump[0] = 7.5f;
         jump[1] = 10f;
-        jump[2] = 3f;
+        jump[2] = 5f;
         i = 0;
         IsGround = true;
 
+        tr = Thomas.GetComponent<Rigidbody2D>();
+        jr = John.GetComponent<Rigidbody2D>();
+        cr = Claire.GetComponent<Rigidbody2D>();
+        tr.isKinematic = false;
+        jr.isKinematic = true;
+        cr.isKinematic = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -50,18 +64,33 @@ public class playerScript_ex01 : MonoBehaviour
         if (Input.GetKey("1"))
         { 
             i = 0;
+            rb.isKinematic = true;
             currentPlayer = GameObject.Find("Thomas");
+            rb.isKinematic = false;
+            //tr.isKinematic = false;
+            jr.isKinematic = true;
+            cr.isKinematic = true;
         }
 
         else if (Input.GetKey("2"))
         {
             i = 1;
+            rb.isKinematic = true;
             currentPlayer = GameObject.Find("John");
+            rb.isKinematic = false;
+            tr.isKinematic = true;
+            //jr.isKinematic = false;
+            cr.isKinematic = true;
         }
         else if (Input.GetKey("3"))
         {
             i = 2;
+            rb.isKinematic = true;
             currentPlayer = GameObject.Find("Claire");
+            rb.isKinematic = false;
+            tr.isKinematic = true;
+            jr.isKinematic = true;
+            //cr.isKinematic = false;
         }
         if (IsGround)
         {
