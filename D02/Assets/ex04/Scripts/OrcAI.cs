@@ -82,7 +82,7 @@ public class OrcAI : MonoBehaviour
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                    Debug.Log("Footman Building [" + enemyHP + "/10]HP has been attacked");
                 }
                 //else
                 //{
@@ -107,7 +107,7 @@ public class OrcAI : MonoBehaviour
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                    Debug.Log("Footman Townhall [" + enemyHP + "/20]HP has been attacked");
                 }
 
             }
@@ -125,7 +125,7 @@ public class OrcAI : MonoBehaviour
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                    Debug.Log("Footman [" + enemyHP + "/10]HP has been attacked");
                 }
 
             }
@@ -139,8 +139,8 @@ public class OrcAI : MonoBehaviour
                     collision.gameObject.CompareTag("FMTownHall"))
         {
             animator.SetBool("Fighting", true);
-            //isAttacking = true;
-            //currentenemy = collision.gameObject;
+            isAttacking = true;
+            currentenemy = collision.gameObject;
 
         }
 
@@ -149,6 +149,6 @@ public class OrcAI : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         animator.SetBool("Fighting", false);
-        //isAttacking = false;
+        isAttacking = false;
     }
 }

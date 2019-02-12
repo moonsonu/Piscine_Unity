@@ -54,7 +54,8 @@ public class FootmanManager : MonoBehaviour
             }
             else if (hit.collider.CompareTag("Orc"))
             {
-                Vector3 mapPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector3 mapPosition = GameObject.FindGameObjectWithTag("Orc").transform.position;
+                //Vector3 mapPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 mapPosition.z = 0f;
                 if (availableFM.Count > 0)
                 {

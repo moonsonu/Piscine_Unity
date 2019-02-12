@@ -106,7 +106,7 @@ public class Footman : MonoBehaviour
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                    Debug.Log("Orc Townhall [" + enemyHP + "/20]HP has been attacked");
                 }
 
             }
@@ -124,7 +124,7 @@ public class Footman : MonoBehaviour
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                    Debug.Log("Orc [" + enemyHP + "/10]HP has been attacked");
                 }
 
             }
