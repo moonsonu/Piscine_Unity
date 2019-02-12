@@ -12,6 +12,8 @@ public class Footman : MonoBehaviour
     public AudioSource runSound;
     private bool facingRight;
     public bool isClicked;
+    public bool isAttacking = false;
+    public GameObject currentenemy;
 
     void Start()
     {
@@ -54,8 +56,33 @@ public class Footman : MonoBehaviour
 
             }
         }
+
+        if (currentenemy != null)
+            Attack(currentenemy);
+
+
+
     }
 
+    void Attack(GameObject enemy)
+    {
+        if (isAttacking)
+        {
+
+            if (enemy.CompareTag("OrcTown"))
+            {
+                int enemyHP = enemy.gameObject.GetComponent<Building>().HP;
+                enemyHP -= 2;
+                Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+            }
+            if (enemy.CompareTag("OCTownHall"))
+            {
+                int townhallHP = enemy.gameObject.GetComponent<TownHall>().HP;
+                townhallHP -= 2;
+                Debug.Log("Orc Building [" + townhallHP + "/10]HP has been attacked");
+            }
+        }
+    }
     //void TakeDamage(GameObject enemy)
     //{
     //    Debug.Log("damage");
@@ -71,17 +98,8 @@ public class Footman : MonoBehaviour
                     collision.gameObject.CompareTag("OCTownHall"))
         {
             animator.SetBool("Fighting", true);
-            if (collision.gameObject.CompareTag("OrcTown"))
-            {
-                Building enemy = collision.GetComponent<Building>();
-                if (enemy.HP > 0)
-                    enemy.TakeDamage();
-            }
-            if (collision.gameObject.CompareTag("OCTownHall"))
-            {
-                TownHall enemy = collision.GetComponent<TownHall>();
-                enemy.TakeDamage();
-            }
+            isAttacking = true;
+            currentenemy = collision.gameObject;
 
         }
 
