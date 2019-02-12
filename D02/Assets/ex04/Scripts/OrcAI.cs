@@ -13,6 +13,8 @@ public class OrcAI : MonoBehaviour
     public GameObject footman;
     public bool isDead;
     public int HP = 10;
+    public bool isAttacking = false;
+    public GameObject currentenemy;
 
     void Start()
     {
@@ -55,7 +57,81 @@ public class OrcAI : MonoBehaviour
             isDead = true;
             gameObject.SetActive(false);
         }
+
+        if (currentenemy != null)
+            Attack(currentenemy);
     }
+
+    void Attack(GameObject enemy)
+    {
+        if (isAttacking)
+        {
+
+            if (enemy.CompareTag("FootmanTown"))
+            {
+                Building town = enemy.gameObject.GetComponent<Building>();
+                if (!town.isDead)
+                {
+                    int enemyHP = town.HP;
+                    enemyHP -= 2;
+                    if (enemyHP == 0)
+                    {
+                        town.isDead = true;
+                        Debug.Log("deadfootman");
+                        currentenemy = null;
+                        isAttacking = false;
+                        animator.SetBool("Fighting", false);
+                    }
+                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                }
+                //else
+                //{
+                //    Debug.Log("deadfootman");
+                //    currentenemy = null;
+                //    isAttacking = false;
+                //    animator.SetBool("Fighting", false);
+                //}
+            }
+            if (enemy.CompareTag("FMTownHall"))
+            {
+                TownHall townhall = enemy.gameObject.GetComponent<TownHall>();
+                if (!townhall.isDead)
+                {
+                    int enemyHP = townhall.HP;
+                    enemyHP -= 2;
+                    if (enemyHP == 0)
+                    {
+                        townhall.isDead = true;
+                        Debug.Log("deadfootman");
+                        currentenemy = null;
+                        isAttacking = false;
+                        animator.SetBool("Fighting", false);
+                    }
+                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                }
+
+            }
+            if (enemy.CompareTag("Footman"))
+            {
+                Footman fm = enemy.gameObject.GetComponent<Footman>();
+                if (!fm.isDead)
+                {
+                    int enemyHP = fm.HP;
+                    enemyHP -= 2;
+                    if (enemyHP == 0)
+                    {
+                        fm.isDead = true;
+                        currentenemy = null;
+                        isAttacking = false;
+                        animator.SetBool("Fighting", false);
+                    }
+                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                }
+
+            }
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Footman") ||

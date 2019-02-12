@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 118313343}
   - component: {fileID: 118313345}
   - component: {fileID: 118313344}
+  - component: {fileID: 118313346}
   m_Layer: 0
   m_Name: FMB4
   m_TagString: FootmanTown
@@ -240,6 +241,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2619047, y: 2.2380953}
   m_EdgeRadius: 0
+--- !u!114 &118313346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118313341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  townhall: {fileID: 1187080739}
+  isDead: 0
 --- !u!1 &465583296
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +268,7 @@ GameObject:
   - component: {fileID: 465583298}
   - component: {fileID: 465583300}
   - component: {fileID: 465583299}
+  - component: {fileID: 465583301}
   m_Layer: 0
   m_Name: FMB3
   m_TagString: FootmanTown
@@ -368,6 +385,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2857144, y: 2.2380953}
   m_EdgeRadius: 0
+--- !u!114 &465583301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465583296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  townhall: {fileID: 1187080739}
+  isDead: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,23 +488,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8864258928048352063}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &754749945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754749941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38295f623befc499bbab8f6d5618107c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  direction: {x: 0, y: 0, z: 0}
-  footman: {fileID: 1847576157}
-  isDead: 0
-  HP: 10
 --- !u!1 &875529271
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +791,7 @@ GameObject:
   - component: {fileID: 1002636563}
   - component: {fileID: 1002636565}
   - component: {fileID: 1002636564}
+  - component: {fileID: 1002636566}
   m_Layer: 0
   m_Name: FMB2
   m_TagString: FootmanTown
@@ -892,6 +908,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9523809, y: 2.1904762}
   m_EdgeRadius: 0
+--- !u!114 &1002636566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002636561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  townhall: {fileID: 1187080739}
+  isDead: 0
 --- !u!1 &1134873238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1810,7 @@ GameObject:
   - component: {fileID: 1924535917}
   - component: {fileID: 1924535919}
   - component: {fileID: 1924535918}
+  - component: {fileID: 1924535920}
   m_Layer: 0
   m_Name: FMB1
   m_TagString: FootmanTown
@@ -1895,6 +1927,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2619047, y: 2.0238094}
   m_EdgeRadius: 0
+--- !u!114 &1924535920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924535915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  townhall: {fileID: 1187080739}
+  isDead: 0
 --- !u!1 &2135958042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,11 +1999,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Footman
-      objectReference: {fileID: 0}
-    - target: {fileID: 3547350160379214012, guid: 8a16d6689d7b24fceb9a1747be59a773,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3547350160379213953, guid: 8a16d6689d7b24fceb9a1747be59a773,
         type: 3}
@@ -2018,11 +2060,6 @@ PrefabInstance:
       propertyPath: runSound
       value: 
       objectReference: {fileID: 1688095673}
-    - target: {fileID: 5069840736328371148, guid: 8a16d6689d7b24fceb9a1747be59a773,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a16d6689d7b24fceb9a1747be59a773, type: 3}
 --- !u!1001 &8864258928048352063
@@ -2092,10 +2129,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1595081509864693716, guid: bbb86eee7aa8e46628a11cc3c8cac26d,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 754749945, guid: bbb86eee7aa8e46628a11cc3c8cac26d, type: 3}
+      propertyPath: footman
+      value: 
+      objectReference: {fileID: 1847576157}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb86eee7aa8e46628a11cc3c8cac26d, type: 3}

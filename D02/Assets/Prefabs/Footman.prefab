@@ -120,6 +120,10 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   runSound: {fileID: 0}
   isClicked: 0
+  isAttacking: 0
+  currentenemy: {fileID: 0}
+  HP: 10
+  isDead: 0
 --- !u!61 &5069840736328371148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130,7 +134,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

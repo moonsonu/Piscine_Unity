@@ -14,6 +14,8 @@ public class Footman : MonoBehaviour
     public bool isClicked;
     public bool isAttacking = false;
     public GameObject currentenemy;
+    public int HP = 10;
+    public bool isDead;
 
     void Start()
     {

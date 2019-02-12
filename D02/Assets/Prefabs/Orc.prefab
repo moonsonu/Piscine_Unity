@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8864258927447292617}
   - component: {fileID: 6871551428432723122}
   - component: {fileID: 1595081509864693716}
+  - component: {fileID: 754749945}
   m_Layer: 0
   m_Name: Orc
   m_TagString: Orc
@@ -132,7 +133,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,3 +149,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.59375, y: 0.671875}
   m_EdgeRadius: 0
+--- !u!114 &754749945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864258927447292618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38295f623befc499bbab8f6d5618107c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  direction: {x: 0, y: 0, z: 0}
+  footman: {fileID: 0}
+  isDead: 0
+  HP: 10
+  isAttacking: 0
+  currentenemy: {fileID: 0}
