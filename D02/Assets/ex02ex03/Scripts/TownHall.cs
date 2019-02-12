@@ -6,17 +6,16 @@ public class TownHall : MonoBehaviour
 {
     public GameObject Spawn;
     public Vector3 position;
-    public float time = 0.0f;
+    public float time;
     public int HP = 20;
     public float spawnTime = 10;
+    public bool isDead;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        isDead = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
@@ -25,21 +24,17 @@ public class TownHall : MonoBehaviour
             CharacterSpawn();
             time = 0;
         }
+
+        if (isDead)
+        {
+            Debug.Log("dbuildingdead");
+            isDead = true;
+            gameObject.SetActive(false);
+        }
     }
 
     void CharacterSpawn()
     {
         GameObject tmp = Instantiate(Spawn, position, Quaternion.identity) as GameObject;
-    }
-
-    public void TakeDamage()
-    {
-        HP -= 1;
-        Debug.Log("Orc Townhall [" + HP + "/20]HP has been attacked");
-        if (HP < 0)
-        {
-            Destroy(gameObject);
-            Debug.Log("The Human Team wins");
-        }
     }
 }

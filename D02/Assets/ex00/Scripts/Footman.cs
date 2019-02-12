@@ -29,11 +29,6 @@ public class Footman : MonoBehaviour
         {
             vector = transform.position;
             runSound.Play();
-            //if (Input.GetMouseButtonDown(0))
-            //{
-            //    target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //    target.z = 0;
-            //}
             if (target != Vector3.zero && (target - vector).magnitude >= 0.2)
             {
                 direction = (target - vector).normalized;
@@ -71,15 +66,47 @@ public class Footman : MonoBehaviour
 
             if (enemy.CompareTag("OrcTown"))
             {
-                int enemyHP = enemy.gameObject.GetComponent<Building>().HP;
-                enemyHP -= 2;
-                Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                Building town = enemy.gameObject.GetComponent<Building>();
+                if (!town.isDead)
+                {
+                    int enemyHP = town.HP;
+                    enemyHP -= 2;
+                    if (enemyHP == 0)
+                    {
+                        town.isDead = true;
+                        Debug.Log("deadfootman");
+                        currentenemy = null;
+                        isAttacking = false;
+                        animator.SetBool("Fighting", false);
+                    }
+                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                }
+                //else
+                //{
+                //    Debug.Log("deadfootman");
+                //    currentenemy = null;
+                //    isAttacking = false;
+                //    animator.SetBool("Fighting", false);
+                //}
             }
             if (enemy.CompareTag("OCTownHall"))
             {
-                int townhallHP = enemy.gameObject.GetComponent<TownHall>().HP;
-                townhallHP -= 2;
-                Debug.Log("Orc Building [" + townhallHP + "/10]HP has been attacked");
+                TownHall townhall = enemy.gameObject.GetComponent<TownHall>();
+                if (!townhall.isDead)
+                {
+                    int enemyHP = townhall.HP;
+                    enemyHP -= 2;
+                    if (enemyHP == 0)
+                    {
+                        townhall.isDead = true;
+                        Debug.Log("deadfootman");
+                        currentenemy = null;
+                        isAttacking = false;
+                        animator.SetBool("Fighting", false);
+                    }
+                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                }
+
             }
         }
     }
@@ -105,24 +132,10 @@ public class Footman : MonoBehaviour
 
     }
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-            //if (other.gameObject.CompareTag("OrcTown"))
-            //{
-            //    Building enemy = other.GetComponent<Building>();
-            //    enemy.TakeDamage();
-            //}
-            //if (other.gameObject.CompareTag("OCTownHall"))
-            //{
-            //    TownHall enemy = other.GetComponent<TownHall>();
-            //    enemy.TakeDamage();
-            //}
-            //if (other.gameObject.CompareTag("Orc"))
-    }
-
     void OnTriggerExit2D(Collider2D other)
     {
         animator.SetBool("Fighting", false);
+        isAttacking = false;
     }
 
     //public void setDestination()

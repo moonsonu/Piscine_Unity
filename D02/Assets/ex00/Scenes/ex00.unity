@@ -597,8 +597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
-  townhall: {fileID: 0}
+  HP: 2
+  townhall: {fileID: 974889100}
+  isDead: 0
 --- !u!1 &974889097
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +699,7 @@ MonoBehaviour:
   time: 0
   HP: 20
   spawnTime: 10
+  isDead: 0
 --- !u!50 &974889101
 Rigidbody2D:
   serializedVersion: 4
@@ -1007,6 +1009,7 @@ MonoBehaviour:
   time: 0
   HP: 20
   spawnTime: 10
+  isDead: 0
 --- !u!50 &1187080740
 Rigidbody2D:
   serializedVersion: 4
@@ -1195,8 +1198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
-  townhall: {fileID: 0}
+  HP: 2
+  townhall: {fileID: 974889100}
+  isDead: 0
 --- !u!1 &1288556494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 151822, guid: 3fae31b33f1df4622a628af1e6d4d0a1,
@@ -1370,8 +1374,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
-  townhall: {fileID: 0}
+  HP: 2
+  townhall: {fileID: 974889100}
+  isDead: 0
 --- !u!1 &1492773509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,8 +1518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 10
-  townhall: {fileID: 0}
+  HP: 2
+  townhall: {fileID: 974889100}
+  isDead: 0
 --- !u!1001 &1675546864
 PrefabInstance:
   m_ObjectHideFlags: 0
