@@ -108,6 +108,24 @@ public class Footman : MonoBehaviour
                 }
 
             }
+            if (enemy.CompareTag("Orc"))
+            {
+                OrcAI orc = enemy.gameObject.GetComponent<OrcAI>();
+                if (!orc.isDead)
+                {
+                    int enemyHP = orc.HP;
+                    enemyHP -= 2;
+                    if (enemyHP == 0)
+                    {
+                        orc.isDead = true;
+                        currentenemy = null;
+                        isAttacking = false;
+                        animator.SetBool("Fighting", false);
+                    }
+                    Debug.Log("Orc Building [" + enemyHP + "/10]HP has been attacked");
+                }
+
+            }
         }
     }
     //void TakeDamage(GameObject enemy)

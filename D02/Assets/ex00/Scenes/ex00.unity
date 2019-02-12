@@ -456,6 +456,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8864258928048352063}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &754749945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754749941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38295f623befc499bbab8f6d5618107c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  direction: {x: 0, y: 0, z: 0}
+  footman: {fileID: 1847576157}
+  isDead: 0
+  HP: 10
 --- !u!1 &875529271
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
+  HP: 10
   townhall: {fileID: 974889100}
   isDead: 0
 --- !u!1 &974889097
@@ -1198,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
+  HP: 10
   townhall: {fileID: 974889100}
   isDead: 0
 --- !u!1 &1288556494 stripped
@@ -1374,7 +1391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
+  HP: 10
   townhall: {fileID: 974889100}
   isDead: 0
 --- !u!1 &1492773509
@@ -1518,7 +1535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab4d93f063f448ed87ce92c12e4d5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 2
+  HP: 10
   townhall: {fileID: 974889100}
   isDead: 0
 --- !u!1001 &1675546864

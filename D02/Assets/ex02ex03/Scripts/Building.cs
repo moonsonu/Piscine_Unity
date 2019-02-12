@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    public int HP = 1;
+    public int HP = 10;
     public TownHall townhall;
     public bool isDead;
 
