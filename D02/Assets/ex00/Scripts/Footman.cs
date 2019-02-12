@@ -54,8 +54,59 @@ public class Footman : MonoBehaviour
 
             }
         }
+    }
+
+    //void TakeDamage(GameObject enemy)
+    //{
+    //    Debug.Log("damage");
+    //    int hp = enemy.GetComponent<Building>().HP;
+    //    hp -= 5;
+    //    Debug.Log(enemy.name);
+    //}
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Orc") ||
+                collision.gameObject.CompareTag("OrcTown") ||
+                    collision.gameObject.CompareTag("OCTownHall"))
+        {
+            animator.SetBool("Fighting", true);
+            if (collision.gameObject.CompareTag("OrcTown"))
+            {
+                Building enemy = collision.GetComponent<Building>();
+                if (enemy.HP > 0)
+                    enemy.TakeDamage();
+            }
+            if (collision.gameObject.CompareTag("OCTownHall"))
+            {
+                TownHall enemy = collision.GetComponent<TownHall>();
+                enemy.TakeDamage();
+            }
+
+        }
 
     }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+            //if (other.gameObject.CompareTag("OrcTown"))
+            //{
+            //    Building enemy = other.GetComponent<Building>();
+            //    enemy.TakeDamage();
+            //}
+            //if (other.gameObject.CompareTag("OCTownHall"))
+            //{
+            //    TownHall enemy = other.GetComponent<TownHall>();
+            //    enemy.TakeDamage();
+            //}
+            //if (other.gameObject.CompareTag("Orc"))
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        animator.SetBool("Fighting", false);
+    }
+
     //public void setDestination()
     //{
     //    //transform.position = mapPosition;

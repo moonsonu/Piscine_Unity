@@ -9,6 +9,9 @@ TagManager:
   - Map
   - FMTownHall
   - OCTownHall
+  - Orc
+  - OrcTown
+  - FootmanTown
   layers:
   - Default
   - TransparentFX

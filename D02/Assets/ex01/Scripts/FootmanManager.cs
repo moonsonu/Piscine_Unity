@@ -16,8 +16,6 @@ public class FootmanManager : MonoBehaviour
 
     void Update()
     {
-
-
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit;
@@ -54,7 +52,22 @@ public class FootmanManager : MonoBehaviour
                     }
                 }
             }
+            else if (hit.collider.CompareTag("Orc"))
+            {
+                Vector3 mapPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mapPosition.z = 0f;
+                if (availableFM.Count > 0)
+                {
+                    for (int i = 0; i < availableFM.Count; i++)
+                    {
+                        //targetposition == enemyposition??
+                        availableFM[i].target = mapPosition;
+                        availableFM[i].isClicked = true;
+                    }
+                }
+            }
         }
+
         if (Input.GetMouseButtonDown(1))
         {
             for (int i = 0; i < availableFM.Count; i++)
