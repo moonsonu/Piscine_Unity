@@ -7,6 +7,8 @@ TagManager:
   - Tile
   - Footman
   - Map
+  - FMTownHall
+  - OCTownHall
   layers:
   - Default
   - TransparentFX

@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\ex00\Scripts\Footman.cs" />
     <Compile Include="Assets\ex01\Scripts\FootmanManager.cs" />
+    <Compile Include="Assets\ex02\Scripts\Building.cs" />
+    <Compile Include="Assets\ex02\Scripts\TownHall.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/moonyoning/Documents/unity_projects/D02/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
