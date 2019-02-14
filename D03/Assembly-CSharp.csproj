@@ -62,13 +62,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Scripts\checkpoint.cs" />
-    <Compile Include="Assets\Scripts\DragHandler.cs" />
-    <Compile Include="Assets\Scripts\DropHandler.cs" />
+    <Compile Include="Assets\Scripts\DragandDrop.cs" />
     <Compile Include="Assets\Scripts\ennemyScript.cs" />
     <Compile Include="Assets\Scripts\ennemySpawner.cs" />
     <Compile Include="Assets\Scripts\explosion.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\gatlingImpactScript.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\rocketScript.cs" />
     <Compile Include="Assets\Scripts\shellExplosion.cs" />
     <Compile Include="Assets\Scripts\shellScript.cs" />
