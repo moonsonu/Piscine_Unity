@@ -69,9 +69,11 @@
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\gatlingImpactScript.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\RankController.cs" />
     <Compile Include="Assets\Scripts\rocketScript.cs" />
     <Compile Include="Assets\Scripts\shellExplosion.cs" />
     <Compile Include="Assets\Scripts\shellScript.cs" />
+    <Compile Include="Assets\Scripts\SpeedController.cs" />
     <Compile Include="Assets\Scripts\TitleController.cs" />
     <Compile Include="Assets\Scripts\towerScript.cs" />
     <Compile Include="Assets\Scripts\visualPathCheckpoint.cs" />

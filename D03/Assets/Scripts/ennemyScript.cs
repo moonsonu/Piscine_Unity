@@ -68,6 +68,9 @@ public class ennemyScript : MonoBehaviour {
 					return ;
 				}
 			}
+            //added
+            RankController rc = GetComponent<RankController>();
+            rc.Victory();
 			Debug.Log ("Victoire !");
 		}
 	}

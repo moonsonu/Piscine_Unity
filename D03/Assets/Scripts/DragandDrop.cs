@@ -8,67 +8,56 @@ public class DragandDrop : MonoBehaviour, IDragHandler, IDropHandler, IBeginDrag
 {
     public GameObject tower;
     public gameManager gm;
-    public towerScript t;
-    // Start is called before the first frame update
+    public GameObject t;
+    public towerScript towerscript;
+    private Vector3 orgPosition;
+    private int energy;
+    private bool enoughEnergy;
+
     void Start()
     {
-        
+
+        enoughEnergy = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        energy = gm.playerEnergy - towerscript.energy;
+        if (energy <= 0)
+        {
+            enoughEnergy = false;
+            gameObject.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            enoughEnergy = true;
+            gameObject.GetComponent<Image>().color = Color.white;
+        }
     }
-
     public void OnBeginDrag(PointerEventData data)
     {
-        Debug.Log("begindrag");
-        GameObject dragged = Instantiate(tower, transform.position, Quaternion.identity);
-        dragged.transform.position = transform.position;
+        orgPosition = transform.position;
     }
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("ondrag");
-
         transform.position = Input.mousePosition;
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        Debug.Log("enddrag");
-
-        transform.position = (Vector3)eventData.delta;
     }
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("ondrop");
-        RectTransform item = tower.transform as RectTransform;
-        if (!RectTransformUtility.RectangleContainsScreenPoint(item, Input.mousePosition))
+        if (enoughEnergy)
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit && hit.collider.transform.tag == "empty")
             {
-                gm.playerEnergy -= t.energy;
+                Debug.Log(energy);
+                gm.playerEnergy -= towerscript.energy;
                 Instantiate(t, hit.collider.gameObject.transform.position, Quaternion.identity);
             }
-            Debug.Log("Drop Item");
         }
+
+        transform.position = orgPosition;
+        Debug.Log("Drop Item");
+        tower = null;
     }
-    //public void OnBeginDrag(PointerEventData eventData)
-    //{
-    //    tower.transform.position = transform.position;
-    //}
-
-    //public void OnDrag(PointerEventData eventData)
-    //{
-    //    tower.transform.position += (Vector3)eventData.delta;
-    //}
-    //public void OnDrop(PointerEventData data)
-    //{
-    //    GameObject fromItem = data.pointerDrag;
-    //    if (data.pointerDrag == null) return;
-
-    //}
 }
