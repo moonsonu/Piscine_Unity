@@ -67,11 +67,8 @@ public class ennemyScript : MonoBehaviour {
 				if (spawner.GetComponent<ennemySpawner>().isEmpty == false || spawner.transform.childCount > 1) {
 					return ;
 				}
-			}
-            //added
-            RankController rc = GetComponent<RankController>();
-            rc.Victory();
-			Debug.Log ("Victoire !");
+            }
+            Debug.Log ("Victoire !");
 		}
 	}
 }
