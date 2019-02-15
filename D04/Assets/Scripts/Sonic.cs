@@ -287,7 +287,7 @@ public class Sonic : MonoBehaviour
 	void newLife() {
 		isHit = false;
 		isDead = false;
-		Application.LoadLevel(Application.loadedLevel);
+		//Application.LoadLevel(Application.loadedLevel);
 	}
 
 	void respawn() {
