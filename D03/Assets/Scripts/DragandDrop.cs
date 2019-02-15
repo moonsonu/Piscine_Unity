@@ -22,7 +22,8 @@ public class DragandDrop : MonoBehaviour, IDragHandler, IDropHandler, IBeginDrag
 
     void Update()
     {
-        energy = gm.playerEnergy - towerscript.energy;
+        energy = gameManager.gm.playerEnergy - towerscript.energy;
+
         if (energy <= 0)
         {
             enoughEnergy = false;
@@ -51,7 +52,7 @@ public class DragandDrop : MonoBehaviour, IDragHandler, IDropHandler, IBeginDrag
             if (hit && hit.collider.transform.tag == "empty")
             {
                 Debug.Log(energy);
-                gm.playerEnergy -= towerscript.energy;
+                gameManager.gm.playerEnergy -= towerscript.energy;
                 Instantiate(t, hit.collider.gameObject.transform.position, Quaternion.identity);
             }
         }

@@ -25,11 +25,12 @@ public class CanvasManager : MonoBehaviour
 
     int CalcHP()
     {
-        return (int)gm.playerHp;
+        return (int)gameManager.gm.playerHp;
     }
 
     int CalcEnergy()
     {
-        return (int)gm.playerEnergy;
+        print(gameManager.gm.playerEnergy);
+        return (int)gameManager.gm.playerEnergy;
     }
 }
