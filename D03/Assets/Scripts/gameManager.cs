@@ -19,10 +19,8 @@ public class gameManager : MonoBehaviour {
 	private float tmpTimeScale = 1;
 	[HideInInspector]public int score = 0;
 
-    public RankController rc;
-
-
-
+    //public RankController rc;
+    public bool isOver = false;
 	public static gameManager gm;
 
 	//Singleton basique  : Voir unity design patterns sur google.
@@ -37,8 +35,8 @@ public class gameManager : MonoBehaviour {
 		playerEnergy = playerStartEnergy;
 	}
 
-	//Pour mettre le jeu en pause
-	public void pause(bool paused) {
+    //Pour mettre le jeu en pause
+    public void pause(bool paused) {
 		if (paused == true) {
 			tmpTimeScale = Time.timeScale;
 			Time.timeScale = 0;
@@ -56,7 +54,11 @@ public class gameManager : MonoBehaviour {
 	public void damagePlayer(int damage) {
 		playerHp -= damage;
 		if (playerHp <= 0)
-			gameOver();
+        {
+            isOver = true;
+            gameOver();
+        }
+
 		else
 			Debug.Log ("Il reste au joueur " + playerHp + "hp");
 	}
@@ -64,9 +66,7 @@ public class gameManager : MonoBehaviour {
 	//On pause le jeu en cas de game over
 	public void gameOver() {
 		Time.timeScale = 0;
-        //added
-        //RankController rc = GetComponent<RankController>();
-        rc.GameOver();
-		Debug.Log ("Game Over");
-	}
+        Debug.Log ("Game Over");
+
+    }
 }

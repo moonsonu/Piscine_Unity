@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{AFCD2C8A-A0CD-9FEE-EDEE-6580E2DCBFF2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UpgradeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShorcutController.cs">
     <Files>
-      <File FileName="Assets/Scripts/gameManager.cs" Line="21" Column="1" />
-      <File FileName="Assets/Scripts/CanvasManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/gameManager.cs" Line="68" Column="22" />
+      <File FileName="Assets/Scripts/CanvasManager.cs" Line="34" Column="33" />
       <File FileName="Assets/Scripts/TitleController.cs" Line="7" Column="1" />
-      <File FileName="Assets/Scripts/RankController.cs" Line="42" Column="1" />
-      <File FileName="Assets/Scripts/ennemyScript.cs" Line="69" Column="6" />
+      <File FileName="Assets/Scripts/RankController.cs" Line="68" Column="40" />
+      <File FileName="Assets/Scripts/ennemyScript.cs" Line="31" Column="17" />
       <File FileName="Assets/Scripts/PauseMenu.cs" Line="22" Column="25" />
-      <File FileName="Assets/Scripts/UpgradeController.cs" Line="29" Column="1" />
-      <File FileName="Assets/Scripts/DragandDrop.cs" Line="56" Column="14" />
-      <File FileName="Assets/Scripts/towerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UpgradeController.cs" Line="29" Column="17" />
+      <File FileName="Assets/Scripts/DragandDrop.cs" Line="26" Column="18" />
+      <File FileName="Assets/Scripts/towerScript.cs" Line="2" Column="1" />
+      <File FileName="Assets/Scripts/ShorcutController.cs" Line="80" Column="18" />
+      <File FileName="Assets/Scripts/FireBallController.cs" Line="87" Column="6" />
+      <File FileName="Assets/Scripts/rocketScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
