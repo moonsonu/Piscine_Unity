@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SelectionBoxController : MonoBehaviour
 {
-    int index = 0;
-    public int totalLevel = 3;
-    public float yOffset = 1f;
+    int yindex = 0;
+    int xindex = 0;
+    public int ytotalLevel = 3;
+    public int xtotalLevel = 4;
+    public float yOffset = 1.8f;
+    public float xOffset = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +22,9 @@ public class SelectionBoxController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if (index < totalLevel - 1)
+            if (yindex < ytotalLevel - 1)
             {
-                index++;
+                yindex++;
                 Vector2 position = transform.position;
                 position.y -= yOffset;
                 transform.position = position;
@@ -29,11 +32,31 @@ public class SelectionBoxController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (index > 0)
+            if (yindex > 0)
             {
-                index--;
+                yindex--;
                 Vector2 position = transform.position;
                 position.y += yOffset;
+                transform.position = position;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if (xindex < xtotalLevel - 1)
+            {
+                xindex++;
+                Vector2 position = transform.position;
+                position.x += xOffset;
+                transform.position = position;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (xindex > 0)
+            {
+                xindex--;
+                Vector2 position = transform.position;
+                position.x -= xOffset;
                 transform.position = position;
             }
         }
