@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/ex04/Scenes/ex04.unity
+  isLoaded: 1
+  isActive: 1
