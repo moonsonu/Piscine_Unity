@@ -1,0 +1,3796 @@
+fileFormatVersion: 2
+guid: 7155528db6ca44281af03d8f01e20f5d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Marble Garden Zone_0
+    21300002: Marble Garden Zone_1
+    21300004: Marble Garden Zone_2
+    21300006: Marble Garden Zone_3
+    21300008: Marble Garden Zone_4
+    21300010: Marble Garden Zone_5
+    21300012: Marble Garden Zone_6
+    21300014: Marble Garden Zone_7
+    21300016: Marble Garden Zone_8
+    21300018: Marble Garden Zone_9
+    21300020: Marble Garden Zone_10
+    21300022: Marble Garden Zone_11
+    21300024: Marble Garden Zone_12
+    21300026: Marble Garden Zone_13
+    21300028: Marble Garden Zone_14
+    21300030: Marble Garden Zone_15
+    21300032: Marble Garden Zone_16
+    21300034: Marble Garden Zone_17
+    21300036: Marble Garden Zone_18
+    21300038: Marble Garden Zone_19
+    21300040: Marble Garden Zone_20
+    21300042: Marble Garden Zone_21
+    21300044: Marble Garden Zone_22
+    21300046: Marble Garden Zone_23
+    21300048: Marble Garden Zone_24
+    21300050: Marble Garden Zone_25
+    21300052: Marble Garden Zone_26
+    21300054: Marble Garden Zone_27
+    21300056: Marble Garden Zone_28
+    21300058: Marble Garden Zone_29
+    21300060: Marble Garden Zone_30
+    21300062: Marble Garden Zone_31
+    21300064: Marble Garden Zone_32
+    21300066: Marble Garden Zone_33
+    21300068: Marble Garden Zone_34
+    21300070: Marble Garden Zone_35
+    21300072: Marble Garden Zone_36
+    21300074: Marble Garden Zone_37
+    21300076: Marble Garden Zone_38
+    21300078: Marble Garden Zone_39
+    21300080: Marble Garden Zone_40
+    21300082: Marble Garden Zone_41
+    21300084: Marble Garden Zone_42
+    21300086: Marble Garden Zone_43
+    21300088: Marble Garden Zone_44
+    21300090: Marble Garden Zone_45
+    21300092: Marble Garden Zone_46
+    21300094: Marble Garden Zone_47
+    21300096: Marble Garden Zone_48
+    21300098: Marble Garden Zone_49
+    21300100: Marble Garden Zone_50
+    21300102: Marble Garden Zone_51
+    21300104: Marble Garden Zone_52
+    21300106: Marble Garden Zone_53
+    21300108: Marble Garden Zone_54
+    21300110: Marble Garden Zone_55
+    21300112: Marble Garden Zone_56
+    21300114: Marble Garden Zone_57
+    21300116: Marble Garden Zone_58
+    21300118: Marble Garden Zone_59
+    21300120: Marble Garden Zone_60
+    21300122: Marble Garden Zone_61
+    21300124: Marble Garden Zone_62
+    21300126: Marble Garden Zone_63
+    21300128: Marble Garden Zone_64
+    21300130: Marble Garden Zone_65
+    21300132: Marble Garden Zone_66
+    21300134: Marble Garden Zone_67
+    21300136: Marble Garden Zone_68
+    21300138: Marble Garden Zone_69
+    21300140: Marble Garden Zone_70
+    21300142: Marble Garden Zone_71
+    21300144: Marble Garden Zone_72
+    21300146: Marble Garden Zone_73
+    21300148: Marble Garden Zone_74
+    21300150: Marble Garden Zone_75
+    21300152: Marble Garden Zone_76
+    21300154: Marble Garden Zone_77
+    21300156: Marble Garden Zone_78
+    21300158: Marble Garden Zone_79
+    21300160: Marble Garden Zone_80
+    21300162: Marble Garden Zone_81
+    21300164: Marble Garden Zone_82
+    21300166: Marble Garden Zone_83
+    21300168: Marble Garden Zone_84
+    21300170: Marble Garden Zone_85
+    21300172: Marble Garden Zone_86
+    21300174: Marble Garden Zone_87
+    21300176: Marble Garden Zone_88
+    21300178: Marble Garden Zone_89
+    21300180: Marble Garden Zone_90
+    21300182: Marble Garden Zone_91
+    21300184: Marble Garden Zone_92
+    21300186: Marble Garden Zone_93
+    21300188: Marble Garden Zone_94
+    21300190: Marble Garden Zone_95
+    21300192: Marble Garden Zone_96
+    21300194: Marble Garden Zone_97
+    21300196: Marble Garden Zone_98
+    21300198: Marble Garden Zone_99
+    21300200: Marble Garden Zone_100
+    21300202: Marble Garden Zone_101
+    21300204: Marble Garden Zone_102
+    21300206: Marble Garden Zone_103
+    21300208: Marble Garden Zone_104
+    21300210: Marble Garden Zone_105
+    21300212: Marble Garden Zone_106
+    21300214: Marble Garden Zone_107
+    21300216: Marble Garden Zone_108
+    21300218: Marble Garden Zone_109
+    21300220: Marble Garden Zone_110
+    21300222: Marble Garden Zone_111
+    21300224: Marble Garden Zone_112
+    21300226: Marble Garden Zone_113
+    21300228: Marble Garden Zone_114
+    21300230: Marble Garden Zone_115
+    21300232: Marble Garden Zone_116
+    21300234: Marble Garden Zone_117
+    21300236: Marble Garden Zone_118
+    21300238: Marble Garden Zone_119
+    21300240: Marble Garden Zone_120
+    21300242: Marble Garden Zone_121
+    21300244: Marble Garden Zone_122
+    21300246: Marble Garden Zone_123
+    21300248: Marble Garden Zone_124
+    21300250: Marble Garden Zone_125
+    21300252: Marble Garden Zone_126
+    21300254: Marble Garden Zone_127
+    21300256: Marble Garden Zone_128
+    21300258: Marble Garden Zone_129
+    21300260: Marble Garden Zone_130
+    21300262: Marble Garden Zone_131
+    21300264: Marble Garden Zone_132
+    21300266: Marble Garden Zone_133
+    21300268: Marble Garden Zone_134
+    21300270: Marble Garden Zone_135
+    21300272: Marble Garden Zone_136
+    21300274: Marble Garden Zone_137
+    21300276: Marble Garden Zone_138
+    21300278: Marble Garden Zone_139
+    21300280: Marble Garden Zone_140
+    21300282: Marble Garden Zone_141
+    21300284: Marble Garden Zone_142
+    21300286: Marble Garden Zone_143
+    21300288: Marble Garden Zone_144
+    21300290: Marble Garden Zone_145
+    21300292: Marble Garden Zone_146
+    21300294: Marble Garden Zone_147
+    21300296: Marble Garden Zone_148
+    21300298: Marble Garden Zone_149
+    21300300: Marble Garden Zone_150
+    21300302: Marble Garden Zone_151
+    21300304: Marble Garden Zone_152
+    21300306: Marble Garden Zone_153
+    21300308: Marble Garden Zone_154
+    21300310: Marble Garden Zone_155
+    21300312: Marble Garden Zone_156
+    21300314: Marble Garden Zone_157
+    21300316: Marble Garden Zone_158
+    21300318: Marble Garden Zone_159
+    21300320: Marble Garden Zone_160
+    21300322: Marble Garden Zone_161
+    21300324: Marble Garden Zone_162
+    21300326: Marble Garden Zone_163
+    21300328: Marble Garden Zone_164
+    21300330: Marble Garden Zone_165
+    21300332: Marble Garden Zone_166
+    21300334: Marble Garden Zone_167
+    21300336: Marble Garden Zone_168
+    21300338: Marble Garden Zone_169
+    21300340: Marble Garden Zone_170
+    21300342: Marble Garden Zone_171
+    21300344: Marble Garden Zone_172
+    21300346: Marble Garden Zone_173
+    21300348: Marble Garden Zone_174
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 2
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Marble Garden Zone_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1991
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8700ef352d9d94b53b2b8676d1aa998d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2073
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0caf84f0336b34a02b7eb03a2cc0e343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2068
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d79c25445a5545ebbea1fe917db4247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2074
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7fbf8885250461588fec046ba92f15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2069
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a043833cb2d431dac1de3bc115028e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_5
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2034
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4789e3938eccd4f388a64d2a083ca3ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_6
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2092
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2647620761e5741f1b67a156e7430655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2068
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac38461603474b0fb1cc20b5dc23262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_8
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 2089
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82f6a2f9907e46a99ac6dd76e20df2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_9
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2089
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c551ff9afdfa246cbb850ae908320377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_10
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2089
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de4eba70527e462db5745fd6988ad10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_11
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 2089
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe35f7f911e142e4a55351afe1a876f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_12
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 2058
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c2b4c176eaa471e9070b5679cbf2b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_13
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 2058
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f57df49a9e084d34bc0a4c2fc5998d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 2058
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7ddb4f9d6754476a6ee275fce5d39b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_15
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1993
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53a65834837a476999414bf2bed0a78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_16
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1993
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28834799444cc40ef99126c294fb7fa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_17
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1993
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89579a711264f4330be6073b739d3de2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_18
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1993
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc89e77a1a9a419482b816fd14fcd7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2023
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e709f7ab1af143a093c51357a7af1d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2021
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49bc1feae44c43bcbd9f4366e58f3c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2024
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e443c0d191ba4a8fa73e6e0fae36c70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2022
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8e97efab87b4cbbaafa30611e84e1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_23
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2064
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9f2849242d3488198d33c40b0c9c04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_24
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2019
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce678e9c957444c9fa0d940029b53f5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1994
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fe9664dafa548d283eaa16b5dd7c46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_26
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2017
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f0775b494e643909d3b4b54c5f97c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_27
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1993
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2be9d6b081147349c81c0a94e217d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_28
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1993
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01836a5e16ed49caac5bba53649cf24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_29
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1993
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28d8d3b5cd91454f9b6c3a3d1d366cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_30
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1997
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21c23dda7a4044fb94302578bcdef8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_31
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1997
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accd8b19c2de9414581a68f6e85717b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_32
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1997
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f412185cdb11a461a9ee5e77843d979e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_33
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1997
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb217aa61621e49ce8f24f502316d216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_34
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1993
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdba6d9ae39b24dc6a278de798623c9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_35
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1937
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f7e81bc80334d41aa7860bb1ebec17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_36
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1937
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8096b1e679284caaba4ee0c618b30c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1937
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d046a1362e04669ad35a18d1ad5f2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_38
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1938
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f666e9315af47608be3107b963597d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_39
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1904
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5710801d91986436ea6b39c65b60d181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_40
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1894
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05312c30a471a440a96decf50b00f038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_41
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1894
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a6114c59c4e4c38b6e24fa6c680508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_42
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1894
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249379070f606484a9dd6589fc522ea6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_43
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1894
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abac88b59bf44c62aa3dfeb3098438f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_44
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1934
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08477a8a39fc44f159270c58d301c002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_45
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1934
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb57af8eeef642f89a8347e8d1ec968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_46
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1934
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56b01df27db34db682d15d7128a01ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_47
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1934
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b457f94d749d748fdaef7b49a946e6aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_48
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1928
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d700fdfe9b0a448da145133c24b0214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_49
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1928
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41109e3c2c4d4e7d806143ee64bf6b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_50
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1912
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25890319f4594da1805d2374f8cacb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_51
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1864
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e770f5f10af324f9a885369f3022ea5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_52
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1864
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aee6a79a3a664a29a06581507979339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_53
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1864
+        width: 32
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5d3aa22a80f4e6b8b60813de4e0c04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_54
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1864
+        width: 32
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a396864a2ffd3416cb1a38dd1a0931f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_55
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c8e67bc2cee40ffb7813c4146adf62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_56
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1839
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42720aaa236540c5a6ce705cd760c5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_57
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1839
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7abf148e78a4727ab7c62170b5db81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_58
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1783
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edcf24a0c8944176b893c4c4466c8c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_59
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e451be3338de744fc997255119b65724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_60
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3205bb8ad914d8e9b9fbc0b03924f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_61
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1798
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2474f9fd26b9b46e395b9b7e2675b7fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_62
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1774
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1418c8777b6a44f9caf3cf0e9d663e76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_63
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1774
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3c6eee5cf6047a4ae41e57653245f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_64
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1735
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4ac79355da846a892dddc9127f32b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_65
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1735
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ff5dc1ebf79426a9d5d7c2e740733d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_66
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1736
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1619de12ca21c4673b658b8c7427095b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_67
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1650
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2ea2b8739034389b21cbfc03060d94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_68
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1606
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0a33c8519254d09be3e668ee7b9dc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_69
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1606
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b048cf8c7e21f47a5a2b40760bccb20b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_70
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1606
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9f123c46685431d95d5e00e822c520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_71
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1692
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4642b147a9b784e44bb69526d1007332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_72
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1606
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7e0e841258f40e2b651f0c2f2fef48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_73
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1605
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03455883ec7dc4c64b4468ce4da4204f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_74
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1605
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0311f1dc76d4251830394d05c823f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_75
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1541
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674c1baf922854cd190afcd11ed8f147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_76
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1541
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75428653db83d4801a0b1aee2e6b8fed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_77
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1541
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce8cbcabdc6742e29d6de0d7ec76254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_78
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defcef983235f471e9887194c4c4ec1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_79
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1559
+        width: 128
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece104f4a2b0a48b796a4671cc5a9c7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_80
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1559
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ef10998d44f4b4998eb3afc2d7c018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_81
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1412
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814e05584d5de4a428f25999047f23ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_82
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1412
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c898385fb6bf421fa4c3a754486d33e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_83
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1502
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d503d8e650b474c8f7721a5e6f3fba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_84
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1502
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97db820072a5341dab86dcc15ace3d2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_85
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1503
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb504ea80fe04161943e772b0e3375b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_86
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1428
+        width: 72
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9047c1d538204c0c8811600ba6470a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_87
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1428
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7877ab23a68b54e53bc1da316f095931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_88
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1428
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae0777716aed4f96b9691b76e238a09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_89
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1428
+        width: 72
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a529e5ed0fe475db9ebf21ac241eac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_90
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1347
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d7a0f20203c4829b52f56d97ac3754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_91
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1347
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff8ecf79952c43b98e779a019d7aa44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_92
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1373
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02c4ea479efd48aaa2ac8ecdb0c362a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_93
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1373
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24093a517e20485db56be8cdab83fc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_94
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1373
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7ebc9ce096345adb8d185c84b3c6a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_95
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1299
+        width: 72
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab9aca16d0e74ff5ab8cf31ea2af768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_96
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1299
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fad4a6a4da48455384011c3519cf6c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_97
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1299
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f950f85187b64a71a02d3872bb61d28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_98
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1299
+        width: 72
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9806921d5a7dd42a89ee00804867f96f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1282
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b06cc7ebdd604781b36424534b2cfbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_100
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1282
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4b9cd43a9fd4f228bdb5975cf7580f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_101
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1308
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03069142314c4c4fa112913f85db2c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_102
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1308
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c255085dd734e219befdf748dc0c52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_103
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1308
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1255b3eab7ee49e9ac2a40745d53652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_104
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1153
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97eebd357570942b988c269b85db8923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_105
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1153
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b977f0e5a3b3470990bb3ba45df99e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_106
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1153
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4f6162ee8b043ce9b2d710e336e22e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_107
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1153
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cabfeb02a8fe34ed79e4eacf7a3e476d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_108
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1153
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b410fcb645a994bd89a55950d3ef4e82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_109
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1153
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb023b58a311247e7b1caae166539a3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_110
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1153
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4dcb5f1743143f88badde05cf509ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_111
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1153
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1e38312a36a4f29b4497c8089426ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_112
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1153
+        width: 128
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1924b5ad947834c0ea96fb3f147621ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_113
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0621bf5f4f28c4052be8772dd134d8cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_114
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9504ea5cd4e342cb80773d6916b6cce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_115
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6a9e6d70cf340f29a4a3899fd36c60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_116
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1024
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14120010b905f405cb6b18d7720b4b41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_117
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3152ae2ba8849f8802bd29ae81be1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_118
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1024
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f4a745311954c6790240ef2a7c56df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_119
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1024
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c079b5874278d44a3a144e5c00e43114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_120
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 920
+        width: 53
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e1d32ae01404492b84d1365dfd70bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_121
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 902
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48753775f3f14fada4406dca164a4bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_122
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 998
+        width: 72
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191e459fbb2074146bb33b1a7cd996a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_123
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 998
+        width: 72
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be626320942394fdb8a720bd73caa03b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_124
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 791
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c6b4f9c072c44d9a5cc12c3722b14e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_125
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 791
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f351218c641d48539252eee9eea0676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_126
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 902
+        width: 109
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260a677a5b7bf4468a862ac22369d658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_127
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 902
+        width: 85
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cb18683bec34a11b68a2b53cd3f805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_128
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 869
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c573ee5709b9481c8376c40f568b267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_129
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 869
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad0700fa564e4cd59e47c612ab18def
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_130
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 662
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fa52bae4b27480d81f99bcbe3c9964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_131
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 662
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0216fb5ac794de28b9094ea690463f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_132
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 773
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f9a67d8480e4ad3bdfd9fd62364b3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_133
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 773
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b819e2e45334c433191d555aaa2a2487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_134
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 773
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad00eee39ee84a37beead032d75fdd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_135
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 773
+        width: 128
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648d38fac35814dd2bc3ebf8c5b58380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_136
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 773
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbac98a8693945f19a600fa2712d0a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_137
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 785
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313ee65fab32344f7877f3d9ebba6a05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_138
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 648
+        width: 85
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cabd249e5f3e47cd8d81707336f6dca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_139
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 648
+        width: 109
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2af0601fcb4945aeaf5c5c0abd9a2fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_140
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 648
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeea19c2277be433c9df298e4252fc44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_141
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 648
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54f659a3362f4d61a1240d3be66e457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_142
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 656
+        width: 117
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad555df7bd7484e1eba2e0aa97badd32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_143
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 519
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88bfb0033feb4c139ba63c526436141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_144
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 519
+        width: 128
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ef5337c99704ceb9f6192206dfcd9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_145
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 519
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c989d42653e4a97a154da8d87322d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_146
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5536f6f0f6f7642cbb5681c647bd72cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_147
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0a50b321ff84335ac9a911ee757cfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_148
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd73c89696f374db1aa598cc309ce387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_149
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 527
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57664a1c608541198406b49f84d2f91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_150
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c66510fb4ae74916a7e7ccc5a06b572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_151
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98710ba436b0456fb84a42d9e993913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_152
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d00ece8a5a14df7a76f84e20697c0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_153
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ee9e967867f432d9d571462facb390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_154
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66f24d99e97f4abda043d5bd95dd1bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_155
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd701045171744df9ad28efc819bb9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_156
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5622c5d17d38a4889b063fce70aa6e20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_157
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 390
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2b9da1998e6474ebae07c97b031336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_158
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a51623f3bf964787a820b728699cacf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_159
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f5bd58b15af4dd7871a86815722124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_160
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07acd8e8ff78a4225a73e96d351ca3b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_161
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df25df3c4a4a4f46be9459cdf70fa0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_162
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e41a327246784714b7046228ce4d065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_163
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d24f4dfc3a247099957e6b5939695b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_164
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c052834ed23242ed866a41ede4ba462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_165
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 261
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8f3e8647db44a32ae94d1d8c1d4dd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_166
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 132
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279105f6b60e045faa2f679acb43f5bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_167
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 132
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6478d032a17469bb51bb40a2377a01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_168
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 132
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28d8b65d22614d94849f31ec24b3773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_169
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 132
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3c918c3a450445f9ca7d67ce1ad056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_170
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 3
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb964a5e8e2d4159b0ef9ad1cc5d9d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_171
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8123f3f99288148a4852a8077207307d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_172
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 3
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c27c40d58f14d43be3e6253c2e378c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_173
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 3
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eea740d848594aecbcda5b0db642f3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marble Garden Zone_174
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 3
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0fa0bd25083465b8724df37417dc3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
