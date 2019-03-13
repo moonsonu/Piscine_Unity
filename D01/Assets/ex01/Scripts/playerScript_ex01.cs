@@ -33,9 +33,9 @@ public class playerScript_ex01 : MonoBehaviour
         speed[0] = 5f;
         speed[1] = 6f;
         speed[2] = 4f;
-        jump[0] = 7.5f;
+        jump[0] = 8f;
         jump[1] = 10f;
-        jump[2] = 5f;
+        jump[2] = 6f;
         i = 0;
         IsGround = true;
 

@@ -15,6 +15,7 @@ public class playerScript_ex02 : MonoBehaviour
     public GameObject tg;
     public GameObject jg;
     public GameObject cg;
+    //public Gameobject door;
 
     private Rigidbody2D rb;
     private Rigidbody2D tr;
@@ -28,28 +29,28 @@ public class playerScript_ex02 : MonoBehaviour
     private float[] speed = new float[3];
     private float[] jump = new float[3];
     private int i;
-    private int currentLevel = 2;
+    private int currentLevel;
+    //private int nextLevel;
 
     private bool IsGround;
 
+    public DoorMovement dm;
 
     void Start()
     {
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
         currentPlayer = GameObject.Find("Thomas");
         tr = Thomas.GetComponent<Rigidbody2D>();
         jr = John.GetComponent<Rigidbody2D>();
         cr = Claire.GetComponent<Rigidbody2D>();
 
-        colT = tg.GetComponent<BoxCollider2D>();
-        colJ = jg.GetComponent<BoxCollider2D>();
-        colC = cg.GetComponent<BoxCollider2D>();
 
         speed[0] = 5f;
         speed[1] = 6f;
         speed[2] = 4f;
-        jump[0] = 7.5f;
+        jump[0] = 8f;
         jump[1] = 10f;
-        jump[2] = 5f;
+        jump[2] = 6f;
         i = 0;
         IsGround = true;
 
@@ -57,9 +58,12 @@ public class playerScript_ex02 : MonoBehaviour
         jr.isKinematic = true;
         cr.isKinematic = true;
 
-        colT.isTrigger = false;
-        colJ.isTrigger = true;
-        colC.isTrigger = true;
+        DisableChild(tg);
+        AbleChild(jg);
+        AbleChild(cg);
+        // colT.isTrigger = false;
+        // colJ.isTrigger = true;
+        // colC.isTrigger = true;
 
     }
 
@@ -72,6 +76,14 @@ public class playerScript_ex02 : MonoBehaviour
             IsGround = true;
         if (collision.gameObject.tag == "Teleport")
             currentPlayer.transform.position = collision.transform.GetChild(0).position;
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "RedButton" && currentPlayer.tag == "Thomas")
+        {
+            Destroy(collision.gameObject);
+            dm.Move();
+        }
+        if (collision.gameObject.tag == "Bomb")
+            Destroy(door);
     }
 
     void Update()
@@ -90,9 +102,12 @@ public class playerScript_ex02 : MonoBehaviour
             jr.isKinematic = true;
             cr.isKinematic = true;
 
-            colT.isTrigger = false;
-            colJ.isTrigger = true;
-            colC.isTrigger = true;
+            DisableChild(tg);
+            AbleChild(jg);
+            AbleChild(cg);
+            //colT.isTrigger = false;
+            //colJ.isTrigger = true;
+            //colC.isTrigger = true;
         }
         else if (Input.GetKey("2"))
         {
@@ -104,9 +119,12 @@ public class playerScript_ex02 : MonoBehaviour
             //jr.isKinematic = false;
             cr.isKinematic = true;
 
-            colJ.isTrigger = false;
-            colT.isTrigger = true;
-            colC.isTrigger = true;
+            DisableChild(jg);
+            AbleChild(tg);
+            AbleChild(cg);
+            //colJ.isTrigger = false;
+            //colT.isTrigger = true;
+            //colC.isTrigger = true;
         }
         else if (Input.GetKey("3"))
         {
@@ -118,9 +136,12 @@ public class playerScript_ex02 : MonoBehaviour
             jr.isKinematic = true;
             //cr.isKinematic = false;
 
-            colC.isTrigger = false;
-            colJ.isTrigger = true;
-            colT.isTrigger = true;
+            DisableChild(cg);
+            AbleChild(jg);
+            AbleChild(tg);
+            //colC.isTrigger = false;
+            //colJ.isTrigger = true;
+            //colT.isTrigger = true;
         }
         if (IsGround)
         {
@@ -132,12 +153,36 @@ public class playerScript_ex02 : MonoBehaviour
         }
 
         if (Input.GetKey("r"))
-            SceneManager.LoadScene("ex02");
+        {
+            // currentLevel = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentLevel);
+        }
 
         if (ThomasExit.IsFallIn() && JohnExit.IsFallIn() && ClaireExit.IsFallIn())
         {
-            SceneManager.LoadScene("ex01");
+            //nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+            //currentLevel += 1;
+            Debug.Log("nextlevel" + currentLevel + 1);
+            SceneManager.LoadScene(currentLevel + 1);
             Debug.Log("Success");
+        }
+    }
+    public void DisableChild(GameObject parent)
+    {
+        for (int i = 0; i < parent.transform.childCount; i++)
+        {
+            var child = parent.transform.GetChild(i).GetComponent<BoxCollider2D>();
+            if (child != null)
+                child.isTrigger = false;
+        }
+    }
+    public void AbleChild(GameObject parent)
+    {
+        for (int i = 0; i < parent.transform.childCount; i++)
+        {
+            var child = parent.transform.GetChild(i).GetComponent<BoxCollider2D>();
+            if (child != null)
+                child.isTrigger = true;
         }
     }
 }

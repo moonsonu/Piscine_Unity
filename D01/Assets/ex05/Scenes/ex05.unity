@@ -763,7 +763,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: c0fb2338576246749bbd0b6e893aee8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -897,6 +897,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 0.625}
   m_EdgeRadius: 0
+--- !u!1 &892249360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4981967095967189876, guid: 406db71dd410e48518e267b2168c4893,
+    type: 3}
+  m_PrefabInstance: {fileID: 4981967097069773472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &928679062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,6 +1658,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 0.625}
   m_EdgeRadius: 0
+--- !u!1 &2063498168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4981967096029982966, guid: 406db71dd410e48518e267b2168c4893,
+    type: 3}
+  m_PrefabInstance: {fileID: 4981967097069773472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3394790806854276970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1738,6 +1750,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThomasAndFriends
       objectReference: {fileID: 0}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: ThomasExit
+      value: 
+      objectReference: {fileID: 373564748}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: JohnExit
+      value: 
+      objectReference: {fileID: 37110468}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: ClaireExit
+      value: 
+      objectReference: {fileID: 1132113443}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: tg
+      value: 
+      objectReference: {fileID: 1278060095}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: jg
+      value: 
+      objectReference: {fileID: 866489000}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: cg
+      value: 
+      objectReference: {fileID: 2225593}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: Thomas
+      value: 
+      objectReference: {fileID: 1754976662}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: John
+      value: 
+      objectReference: {fileID: 892249360}
+    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: Claire
+      value: 
+      objectReference: {fileID: 2063498168}
     - target: {fileID: 4981967095545824617, guid: 406db71dd410e48518e267b2168c4893,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1793,36 +1850,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
-        type: 3}
-      propertyPath: ThomasExit
-      value: 
-      objectReference: {fileID: 373564748}
-    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
-        type: 3}
-      propertyPath: JohnExit
-      value: 
-      objectReference: {fileID: 37110468}
-    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
-        type: 3}
-      propertyPath: ClaireExit
-      value: 
-      objectReference: {fileID: 1132113443}
-    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
-        type: 3}
-      propertyPath: tg
-      value: 
-      objectReference: {fileID: 1278060095}
-    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
-        type: 3}
-      propertyPath: jg
-      value: 
-      objectReference: {fileID: 866489000}
-    - target: {fileID: 4981967096391791415, guid: 406db71dd410e48518e267b2168c4893,
-        type: 3}
-      propertyPath: cg
-      value: 
-      objectReference: {fileID: 2225593}
     - target: {fileID: 4981967095967189877, guid: 406db71dd410e48518e267b2168c4893,
         type: 3}
       propertyPath: ThomasExit
@@ -1853,6 +1880,21 @@ PrefabInstance:
       propertyPath: cg
       value: 
       objectReference: {fileID: 2225593}
+    - target: {fileID: 4981967095967189877, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: Thomas
+      value: 
+      objectReference: {fileID: 1754976662}
+    - target: {fileID: 4981967095967189877, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: John
+      value: 
+      objectReference: {fileID: 892249360}
+    - target: {fileID: 4981967095967189877, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: Claire
+      value: 
+      objectReference: {fileID: 2063498168}
     - target: {fileID: 4981967096029982967, guid: 406db71dd410e48518e267b2168c4893,
         type: 3}
       propertyPath: ThomasExit
@@ -1883,6 +1925,21 @@ PrefabInstance:
       propertyPath: cg
       value: 
       objectReference: {fileID: 2225593}
+    - target: {fileID: 4981967096029982967, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: Thomas
+      value: 
+      objectReference: {fileID: 1754976662}
+    - target: {fileID: 4981967096029982967, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: John
+      value: 
+      objectReference: {fileID: 892249360}
+    - target: {fileID: 4981967096029982967, guid: 406db71dd410e48518e267b2168c4893,
+        type: 3}
+      propertyPath: Claire
+      value: 
+      objectReference: {fileID: 2063498168}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 406db71dd410e48518e267b2168c4893, type: 3}
 --- !u!1001 &7540272895074906878

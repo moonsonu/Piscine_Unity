@@ -12,6 +12,8 @@ TagManager:
   - JohnGround
   - ClaireGround
   - Teleport
+  - RedButton
+  - Bomb
   layers:
   - Default
   - TransparentFX
