@@ -23,12 +23,13 @@ public class playerScript_ex01 : MonoBehaviour
     private float[] speed = new float[3];
     private float[] jump = new float[3];
     private int i;
-    private int currentLevel = 1;
+    private int currentLevel;
 
     private bool IsGround;
 
     void Start()
     {
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
         currentPlayer = GameObject.Find("Thomas");
         speed[0] = 5f;
         speed[1] = 6f;
@@ -102,11 +103,11 @@ public class playerScript_ex01 : MonoBehaviour
         }
 
         if (Input.GetKey("r"))
-            SceneManager.LoadScene("ex01");
+            SceneManager.LoadScene(currentLevel);
 
         if (ThomasExit.IsFallIn() && JohnExit.IsFallIn() && ClaireExit.IsFallIn())
         {
-            SceneManager.LoadScene("ex02");
+            SceneManager.LoadScene(currentLevel + 1);
             Debug.Log("Success");
         }
     }

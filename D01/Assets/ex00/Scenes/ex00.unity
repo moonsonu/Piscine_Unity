@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 1754976662}
-  speed: 5
+  speed: 3
   jump: 10
 --- !u!212 &1112025558
 SpriteRenderer:
@@ -1209,9 +1209,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1754976665}
   - component: {fileID: 1754976664}
-  - component: {fileID: 1754976663}
   - component: {fileID: 1754976667}
   - component: {fileID: 1754976666}
+  - component: {fileID: 1754976663}
   m_Layer: 0
   m_Name: Thomas
   m_TagString: Untagged
@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 1754976662}
-  speed: 5
+  speed: 3
   jump: 10
 --- !u!212 &1754976664
 SpriteRenderer:
@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPlayer: {fileID: 1754976662}
-  speed: 5
+  speed: 3
   jump: 10
 --- !u!212 &2114589272
 SpriteRenderer:

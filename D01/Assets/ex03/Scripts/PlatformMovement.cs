@@ -8,7 +8,7 @@ public class PlatformMovement : MonoBehaviour
     private Vector3 posB;
 
     [SerializeField]
-    private float speed;
+    private float speed = 1;
 
     private Vector3 nexPos;
 

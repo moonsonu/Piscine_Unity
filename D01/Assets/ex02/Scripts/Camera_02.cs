@@ -7,6 +7,7 @@ public class Camera_02 : MonoBehaviour
     public GameObject Player;
     private Vector3 offset;
     public playerScript_ex02 getPlayer;
+    public bool isAlive = true;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class Camera_02 : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = Player.transform.position + offset;
+        if (isAlive == true)
+            transform.position = Player.transform.position + offset;
     }
 }

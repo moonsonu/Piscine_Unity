@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerScript_ex00 : MonoBehaviour
 {
@@ -11,9 +12,12 @@ public class playerScript_ex00 : MonoBehaviour
     private Rigidbody2D rb;
     private float moveInput;
 
+    int currentLevel;
+
     void Start()
     {
         currentPlayer = GameObject.Find("Thomas");
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
     }
 
     void Update()
@@ -42,6 +46,6 @@ public class playerScript_ex00 : MonoBehaviour
         }
 
         if (Input.GetKey("r"))
-            Application.LoadLevel(0);
+            SceneManager.LoadScene(currentLevel);
     }
 }

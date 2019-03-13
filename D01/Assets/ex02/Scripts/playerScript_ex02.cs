@@ -15,7 +15,7 @@ public class playerScript_ex02 : MonoBehaviour
     public GameObject tg;
     public GameObject jg;
     public GameObject cg;
-    //public Gameobject door;
+    public GameObject d;
 
     private Rigidbody2D rb;
     private Rigidbody2D tr;
@@ -34,7 +34,8 @@ public class playerScript_ex02 : MonoBehaviour
 
     private bool IsGround;
 
-    public DoorMovement dm;
+    public DoorMovement door;
+    public Camera_02 cam;
 
     void Start()
     {
@@ -69,6 +70,7 @@ public class playerScript_ex02 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Ground" ||
                 collision.gameObject.tag == "Thomas" ||
                     collision.gameObject.tag == "John" ||
@@ -80,10 +82,41 @@ public class playerScript_ex02 : MonoBehaviour
         if (collision.gameObject.tag == "RedButton" && currentPlayer.tag == "Thomas")
         {
             Destroy(collision.gameObject);
-            dm.Move();
+            door.Move();
         }
         if (collision.gameObject.tag == "Bomb")
-            Destroy(door);
+        {
+            Destroy(collision.gameObject);
+            Destroy(d);
+        }
+        if (collision.gameObject.tag == "BlueButton" && currentPlayer.tag == "Claire")
+        {
+            Destroy(collision.gameObject);
+            //SpriteRenderer color = GameObject.Find("GroundChange").GetComponent<SpriteRenderer>();
+            //newcolor = new Color(0f, 38f, 62f, 94f);
+            //color.color = newcolor;
+            //GameObject claireground = GameObject.Find("GroundChange").gameObject;
+            //DisableChild(claireground);
+            var ground = GameObject.Find("GroundChange").gameObject;
+            ground.SetActive(false);
+            d.transform.position = ground.transform.position;
+            d.SetActive(true);
+            //cr.isKinematic = false;
+
+            var g = d.GetComponent<BoxCollider2D>();
+            g.isTrigger = false;
+        }
+        if (collision.gameObject.tag == "Bullet" && currentPlayer.tag == "Thomas")
+        {
+            cam.isAlive = false;
+            Debug.Log(collision.gameObject.tag);
+            //currentPlayer.SetActive(false);
+        }
+
+        //if (collision.gameObject.tag == "Trap")
+        //{
+        //    Debug.Log(collision.gameObject.tag);
+        //}
     }
 
     void Update()
@@ -108,6 +141,9 @@ public class playerScript_ex02 : MonoBehaviour
             //colT.isTrigger = false;
             //colJ.isTrigger = true;
             //colC.isTrigger = true;
+
+            var g = d.GetComponent<BoxCollider2D>();
+            g.isTrigger = true;
         }
         else if (Input.GetKey("2"))
         {
@@ -122,6 +158,9 @@ public class playerScript_ex02 : MonoBehaviour
             DisableChild(jg);
             AbleChild(tg);
             AbleChild(cg);
+
+            var g = d.GetComponent<BoxCollider2D>();
+            g.isTrigger = true;
             //colJ.isTrigger = false;
             //colT.isTrigger = true;
             //colC.isTrigger = true;
@@ -162,7 +201,6 @@ public class playerScript_ex02 : MonoBehaviour
         {
             //nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
             //currentLevel += 1;
-            Debug.Log("nextlevel" + currentLevel + 1);
             SceneManager.LoadScene(currentLevel + 1);
             Debug.Log("Success");
         }

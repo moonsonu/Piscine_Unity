@@ -7,7 +7,7 @@ public class Turret : MonoBehaviour
     public float distance;
     public float wakeRange;
     public float shootInterval;
-    public float bulletSpeed = 10;
+    public float bulletSpeed = 30;
     public float bulletTimer;
 
     public bool attack;

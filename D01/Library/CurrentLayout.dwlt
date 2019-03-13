@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 829
-    y: 402
+    x: 880
+    y: 295
     width: 1680
     height: 920
   m_ShowMode: 4
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 1
-  controlID: 24
+  controlID: 79
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 25
+  controlID: 80
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 26
+  controlID: 81
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 88
+  controlID: 82
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -422,8 +422,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 829
-    y: 432
+    x: 880
+    y: 325
     width: 700
     height: 576
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -502,17 +502,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1531
-    y: 432
+    x: 1582
+    y: 325
     width: 360
     height: 576
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ae2a00008c2a0000c22a0000
-      m_LastClickedID: 10946
-      m_ExpandedIDs: 10faffff7efaffffc4fbffff
+      m_SelectedIDs: 720c0000
+      m_LastClickedID: 3186
+      m_ExpandedIDs: c4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -557,8 +557,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 829
-    y: 1028
+    x: 880
+    y: 921
     width: 1064
     height: 254
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -574,7 +574,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ex00/Scripts
+    - Assets/ex01/Scripts
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -586,7 +586,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
-    m_ExpandedIDs: 0000000080090000d6090000f2090000f6090000ac0a0000ba0a0000c20a0000e00a0000ee0a0000f80a00001e0b00005e0b0000820b0000900b0000b60b0000d60b0000f80b00009e290000a0290000
+    m_ExpandedIDs: 0000000080090000b8090000d6090000f2090000f60900003e0a0000ac0a0000ba0a0000c20a0000e00a0000ee0a0000f80a00001e0b00005e0b00007a0b0000820b0000900b0000b60b0000ca0b0000d60b0000f80b00006229000064290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,21 +614,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000080090000b8090000d6090000f2090000f60900003e0a0000ac0a0000ba0a0000c20a0000e00a0000ee0a0000f80a00001e0b00005e0b00007a0b0000820b0000900b0000b60b0000ca0b0000d60b0000f80b00009e290000a0290000
+    m_ExpandedIDs: ffffffff0000000080090000b8090000d6090000f2090000f60900003e0a0000ac0a0000ba0a0000c20a0000e00a0000ee0a0000f80a00001e0b00005e0b00007a0b0000820b0000900b0000b60b0000ca0b0000d60b0000f80b00006229000064290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: playerScript_ex00
-      m_OriginalName: playerScript_ex00
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 2130
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -690,8 +690,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1895
-    y: 432
+    x: 1946
+    y: 325
     width: 612
     height: 850
   m_PersistentViewDataDictionary: {fileID: 0}
