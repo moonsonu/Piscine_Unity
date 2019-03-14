@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    public int HP = 10;
+    public float HP = 10;
     public TownHall townhall;
     public bool isDead;
 
@@ -23,5 +23,21 @@ public class Building : MonoBehaviour
             TownHall stime = townhall.GetComponent<TownHall>();
             stime.spawnTime += 2.5f;
         }
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        if (!isDead)
+        {
+            HP -= 0.1f;
+            Debug.Log("Building [" + HP + "/10]HP has been attacked");
+            if (HP <= 0)
+            {
+                isDead = true;
+                Destroy(gameObject);
+            }
+        }
+        else
+            Debug.Log("Beating a dead horse.");
     }
 }

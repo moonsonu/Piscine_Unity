@@ -6,12 +6,12 @@ public class FootmanManager : MonoBehaviour
 {
     public List<Footman> availableFM;
     public GameObject selectedCharacter;
-    public Footman footman;
+    //public Footman footman;
 
     void Start()
     {
         availableFM = new List<Footman>();
-        footman = GetComponent<Footman>();
+        //footman = GetComponent<Footman>();
     }
 
     void Update()
@@ -26,7 +26,11 @@ public class FootmanManager : MonoBehaviour
             {
                 if (availableFM.Count > 0 && Input.GetKey(KeyCode.LeftControl))
                 {
+                    Debug.Log("Add to List!");
                     availableFM.Add(hit.collider.gameObject.GetComponent<Footman>());
+                    hit.collider.gameObject.GetComponent<Footman>().FirstClicked();
+
+
                 }
                 else if (availableFM.Count > 0)
                 {
@@ -35,8 +39,11 @@ public class FootmanManager : MonoBehaviour
                         availableFM[i].isClicked = false;
                     }
                     availableFM.Clear();
+
                 }
                 availableFM.Add(hit.collider.gameObject.GetComponent<Footman>());
+                hit.collider.gameObject.GetComponent<Footman>().FirstClicked();
+
             }
 
             else if (hit.collider.CompareTag("Map"))
@@ -68,7 +75,6 @@ public class FootmanManager : MonoBehaviour
                 }
             }
         }
-
         if (Input.GetMouseButtonDown(1))
         {
             for (int i = 0; i < availableFM.Count; i++)

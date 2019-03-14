@@ -12,14 +12,14 @@ public class OrcAI : MonoBehaviour
     private bool facingRight;
     public GameObject footman;
     public bool isDead;
-    public int HP = 10;
+    public float HP = 10;
     public bool isAttacking = false;
     public GameObject currentenemy;
 
     void Start()
     {
         orcPosition = transform.position;
-        target = footman.transform.position;
+        target = GameObject.FindWithTag("FootPOS").transform.position;
         animator = GetComponentInChildren<Animator>();
         facingRight = true;
         isDead = false;
@@ -28,7 +28,6 @@ public class OrcAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (orcPosition != Vector3.zero && (orcPosition - target).magnitude >= 0.2)
         {
             direction = (orcPosition - target).normalized;
@@ -57,9 +56,13 @@ public class OrcAI : MonoBehaviour
             isDead = true;
             gameObject.SetActive(false);
         }
-
         if (currentenemy != null)
             Attack(currentenemy);
+        if (currentenemy == null)
+        {
+            target = GameObject.FindWithTag("Footman").transform.position;
+            target = GameObject.FindWithTag("FootmanTown").transform.position;
+        }
     }
 
     void Attack(GameObject enemy)
@@ -72,17 +75,15 @@ public class OrcAI : MonoBehaviour
                 Building town = enemy.gameObject.GetComponent<Building>();
                 if (!town.isDead)
                 {
-                    int enemyHP = town.HP;
-                    enemyHP -= 2;
-                    if (enemyHP == 0)
+                    float enemyHP = town.HP;
+                    town.TakeDamage(0.1f);
+                    if (enemyHP <= 0)
                     {
-                        town.isDead = true;
-                        Debug.Log("deadfootman");
                         currentenemy = null;
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Footman Building [" + enemyHP + "/10]HP has been attacked");
+                    //Debug.Log("Footman Building [" + enemyHP + "/10]HP has been attacked");
                 }
                 //else
                 //{
@@ -97,39 +98,51 @@ public class OrcAI : MonoBehaviour
                 TownHall townhall = enemy.gameObject.GetComponent<TownHall>();
                 if (!townhall.isDead)
                 {
-                    int enemyHP = townhall.HP;
-                    enemyHP -= 2;
-                    if (enemyHP == 0)
+                    float enemyHP = townhall.HP;
+                    townhall.TakeDamage(0.1f);
+                    if (enemyHP <= 0)
                     {
-                        townhall.isDead = true;
-                        Debug.Log("deadfootman");
                         currentenemy = null;
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Footman Townhall [" + enemyHP + "/20]HP has been attacked");
                 }
-
             }
+
             if (enemy.CompareTag("Footman"))
             {
                 Footman fm = enemy.gameObject.GetComponent<Footman>();
                 if (!fm.isDead)
                 {
-                    int enemyHP = fm.HP;
-                    enemyHP -= 2;
-                    if (enemyHP == 0)
+                    float enemyHP = fm.HP;
+                    fm.TakeDamage(0.1f);
+                    if (enemyHP <= 0)
                     {
-                        fm.isDead = true;
                         currentenemy = null;
                         isAttacking = false;
                         animator.SetBool("Fighting", false);
                     }
-                    Debug.Log("Footman [" + enemyHP + "/10]HP has been attacked");
+                    //Debug.Log("Footman [" + enemyHP + "/10]HP has been attacked");
                 }
-
             }
         }
+    }
+
+    public void TakeDamage(float dmg)
+    {
+        if (!isDead)
+        {
+            HP -= dmg;
+            Debug.Log("Orc [" + HP + "/10]HP has been attacked");
+            if (HP <= 0)
+            {
+                isDead = true;
+                Destroy(gameObject);
+                Debug.Log("Orc 죽었!!!!!!!!!!!!!!!!!!");
+            }
+        }
+        else
+            Debug.Log("Beating a dead horse.");
     }
 
     void OnTriggerEnter2D(Collider2D collision)

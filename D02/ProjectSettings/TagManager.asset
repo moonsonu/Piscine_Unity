@@ -12,6 +12,7 @@ TagManager:
   - Orc
   - OrcTown
   - FootmanTown
+  - FootPOS
   layers:
   - Default
   - TransparentFX
