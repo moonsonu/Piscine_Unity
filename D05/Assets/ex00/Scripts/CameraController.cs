@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public Transform ballObj;
     public float speedKey = 50f;
     public float speedMouse = 5f;
     public float Border = 10f;
@@ -12,11 +13,12 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Width" + Screen.width + "height" + Screen.height);
+        
     }
 
     void Update()
     {
+        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, ballObj.GetComponent<Rigidbody>().velocity.z); 
         Vector3 pos = transform.position;
         if (Input.GetKey("w"))
         {
@@ -50,9 +52,9 @@ public class CameraController : MonoBehaviour
             if (pos.y >= 0)
                 pos.y -= speedKey * Time.deltaTime;
         }
-        mouseX -= speedMouse * Input.GetAxis("Mouse Y");
-        mouseY += speedMouse * Input.GetAxis("Mouse X");
-        transform.eulerAngles = new Vector3(mouseX, mouseY, 0);
+        //mouseX -= speedMouse * Input.GetAxis("Mouse Y");
+        //mouseY += speedMouse * Input.GetAxis("Mouse X");
+        //transform.eulerAngles = new Vector3(mouseX, mouseY, 0);
         transform.position = pos;
     }
 }

@@ -61,7 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ex00\Scripts\CameraController.cs" />
-    <Compile Include="Assets\ex01\Scripts\GUIController.cs" />
+    <Compile Include="Assets\ex01\Scripts\Club.cs" />
+    <Compile Include="Assets\ex01\Scripts\GolfBall.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/ksonu/D05/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
