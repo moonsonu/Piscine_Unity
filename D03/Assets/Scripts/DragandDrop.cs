@@ -23,6 +23,7 @@ public class DragandDrop : MonoBehaviour, IDragHandler, IDropHandler, IBeginDrag
 
     void Update()
     {
+        Debug.Log("draganddrop");
         energy = gameManager.gm.playerEnergy - towerscript.energy;
 
         if (energy <= 0)

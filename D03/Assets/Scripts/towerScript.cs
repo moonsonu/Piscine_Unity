@@ -6,7 +6,7 @@ public class towerScript : MonoBehaviour {
 
 	private bool canFire = false;
 	private float nextShot = 0;
-	public enum Type{gatling, rocket, canon};
+	public enum Type{gatling, rocket, canon, fireball};
 	public Type type;
 	public GameObject ammo;
 	public GameObject turret;
@@ -45,6 +45,8 @@ public class towerScript : MonoBehaviour {
 			botsList.Add(bot.gameObject);
 		else if (type == Type.rocket && (bot.tag == "bot" || bot.tag == "flybot" || bot.tag == "boss"))
 			botsList.Add(bot.gameObject);
+        else if (type == Type.fireball && (bot.tag == "bot" || bot.tag == "flybot" || bot.tag == "boss"))
+            botsList.Add(bot.gameObject);
 	}
 
 	void OnTriggerExit2D(Collider2D bot) {
@@ -54,6 +56,8 @@ public class towerScript : MonoBehaviour {
 			botsList.Remove(bot.gameObject);
 		else if (type == Type.rocket && (bot.tag == "bot" || bot.tag == "flybot" || bot.tag == "boss"))
 			botsList.Remove(bot.gameObject);
+        else if (type == Type.fireball && (bot.tag == "bot" || bot.tag == "flybot" || bot.tag == "boss"))
+            botsList.Remove(bot.gameObject);
 	}
 
 	void aim(GameObject bot) {
@@ -64,12 +68,14 @@ public class towerScript : MonoBehaviour {
 	}
 
 	void fire(GameObject bot) {
-		if (type == Type.canon)
-			canonFire(bot);
-		else if (type == Type.gatling)
-			gatlingFire(bot);
-		else if (type == Type.rocket)
-			rocketFire(bot);
+        if (type == Type.canon)
+            canonFire(bot);
+        else if (type == Type.gatling)
+            gatlingFire(bot);
+        else if (type == Type.rocket)
+            rocketFire(bot);
+        else if (type == Type.fireball)
+            fireballFire(bot);
 		canFire = false;
 		nextShot = Time.time + fireRate;
 	}
@@ -96,4 +102,13 @@ public class towerScript : MonoBehaviour {
 		newRocket.GetComponent<rocketScript> ().damage = damage;
 		newRocket.transform.localScale = new Vector2(-1, 1);
 	}
+
+    void fireballFire(GameObject bot)
+    {
+        GameObject newRocket = (GameObject)Instantiate(ammo, gameObject.transform.position, gameObject.transform.rotation);
+        newRocket.transform.rotation = Quaternion.Euler(newRocket.transform.rotation.x, newRocket.transform.rotation.y, newRocket.transform.rotation.z + 180);
+        newRocket.GetComponent<FireBallController>().getTarget(bot);
+        newRocket.GetComponent<FireBallController>().damage = damage;
+        newRocket.transform.localScale = new Vector2(-1, 1);
+    }
 }
