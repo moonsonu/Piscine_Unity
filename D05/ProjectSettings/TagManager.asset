@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Hole
+  - Water
   layers:
   - Default
   - TransparentFX

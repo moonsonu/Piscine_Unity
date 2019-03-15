@@ -13,10 +13,12 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
     private Camera cam;
     private bool viewMode = false;
+    public GolfBall gbscript;
 
     void Start()
     {
         cam = GetComponent<Camera>();
+        gbscript = GetComponent<GolfBall>();
         Debug.Log(flag.Find("Camera01.target").name);
         flag = flag.Find("Camera01.target").transform;
         cam.transform.position = gb.transform.position;
@@ -55,5 +57,7 @@ public class CameraController : MonoBehaviour
             mouseY += speed * Input.GetAxis("Mouse X") * Time.deltaTime;
             transform.eulerAngles = new Vector3(mouseX, mouseY, 0);
         }
+        if (!gbscript.isMoving)
+            cam.transform.position = gb.transform.position;
     }
 }
