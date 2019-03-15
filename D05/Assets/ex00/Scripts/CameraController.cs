@@ -4,57 +4,56 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform ballObj;
-    public float speedKey = 50f;
-    public float speedMouse = 5f;
+    public GameObject gb;
+    public Transform flag;
+    public float speed = 10f;
     public float Border = 10f;
     private float mouseX;
     private float mouseY;
+    private Vector3 offset;
+    private Camera cam;
+    private bool viewMode = false;
 
     void Start()
     {
-        
+        cam = GetComponent<Camera>();
+        Debug.Log(flag.Find("Camera01.target").name);
+        flag = flag.Find("Camera01.target").transform;
+        cam.transform.position = gb.transform.position;
     }
 
     void Update()
     {
-        GetComponent<Rigidbody>().velocity = new Vector3(0, 0, ballObj.GetComponent<Rigidbody>().velocity.z); 
-        Vector3 pos = transform.position;
-        if (Input.GetKey("w"))
-        {
-            if (pos.z <= Screen.width)
-                pos.z += speedKey * Time.deltaTime;
-        }
-
-        if (Input.GetKey("s"))
-            pos.z -= speedKey * Time.deltaTime;
-
-        if (Input.GetKey("a"))
-        {
-            if (pos.x >= 50)
-                pos.x -= speedKey * Time.deltaTime;
-        }
-
-        if (Input.GetKey("d"))
-        {
-            if (pos.x <= Screen.width + 50)
-                pos.x += speedKey * Time.deltaTime;
-        }
-
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+            cam.fieldOfView -= 1;
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+            cam.fieldOfView += 1;
+        
+        if (Input.GetKey("a") || Input.GetKey("d"))
+            cam.transform.Translate(Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime, 0, 0);
+        if (Input.GetKey("w") || Input.GetKey("s"))
+            cam.transform.Translate(0, 0, Input.GetAxisRaw("Vertical") * speed * Time.deltaTime);
         if (Input.GetKey("e"))
-        {
-            if (pos.y <= Screen.height)
-                pos.y += speedKey * Time.deltaTime;
-        }
-
+            cam.transform.position += cam.transform.up * Time.deltaTime * speed;
         if (Input.GetKey("q"))
+            cam.transform.position -= cam.transform.up * Time.deltaTime * speed;
+        
+        if (Input.GetKeyDown("e"))
         {
-            if (pos.y >= 0)
-                pos.y -= speedKey * Time.deltaTime;
+            cam.transform.position += cam.transform.up * 30f;
+            viewMode = true;
         }
-        //mouseX -= speedMouse * Input.GetAxis("Mouse Y");
-        //mouseY += speedMouse * Input.GetAxis("Mouse X");
-        //transform.eulerAngles = new Vector3(mouseX, mouseY, 0);
-        transform.position = pos;
+        if (Input.GetKeyDown("space"))
+        {
+            viewMode = false;
+            cam.transform.position = gb.transform.position;
+            cam.transform.LookAt(flag); 
+        }
+        if (viewMode)
+        {
+            mouseX -= speed * Input.GetAxis("Mouse Y") * Time.deltaTime;
+            mouseY += speed * Input.GetAxis("Mouse X") * Time.deltaTime;
+            transform.eulerAngles = new Vector3(mouseX, mouseY, 0);
+        }
     }
 }
