@@ -28,6 +28,7 @@ public class CameraController : MonoBehaviour
             float rotateY = transform.localEulerAngles.y;
             rotateY = Mathf.Clamp(rotateY, minVert, maxVert);
             transform.localEulerAngles = new Vector3(rotateX, rotateY, 0);
+
         }
     }
 }

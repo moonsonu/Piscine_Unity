@@ -24,6 +24,8 @@ public class MovementController : MonoBehaviour
         //movement *= Time.deltaTime;
         ////movement = transform.TransformDirection(movement);
         //transform.position += movement;
-        transform.position += movement * Time.deltaTime * speed;
+        //transform.position += movement * Time.deltaTime * speed;
+
+        transform.Translate(movement * Time.deltaTime * speed);
     }
 }
