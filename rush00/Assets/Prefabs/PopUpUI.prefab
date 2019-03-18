@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1549158376859685903}
   - component: {fileID: 1549158376859685902}
   - component: {fileID: 1549158376859685901}
+  - component: {fileID: 1795646879}
   m_Layer: 5
   m_Name: PopUpUI
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &1549158376859685902
 MonoBehaviour:
@@ -100,6 +101,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1795646879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549158376859685900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1e1ce955b5440a8af3cc288ddce85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  weaponName: {fileID: 1549158377261322780}
+  bullet: {fileID: 1549158378857043440}
+  type: {fileID: 1549158378133671767}
+  gameOver: {fileID: 1549158376879078904}
+  Won: {fileID: 0}
+  currentWeapon: {fileID: 0}
 --- !u!1 &1549158376860564656
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.4, y: -119}
+  m_AnchoredPosition: {x: 0.4, y: -254}
   m_SizeDelta: {x: 1686.59, y: 155.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1549158376860564659
@@ -170,7 +190,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: a285cadff1add4348826209ef759c934, type: 3}
     m_FontSize: 116
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 116
     m_Alignment: 4
@@ -191,7 +211,7 @@ GameObject:
   - component: {fileID: 1549158376879078905}
   - component: {fileID: 1549158376879078907}
   - component: {fileID: 1549158376879078906}
-  - component: {fileID: 1549158376879078908}
+  - component: {fileID: 5402241427502336478}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -259,7 +279,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1549158376879078908
+--- !u!114 &5402241427502336478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,7 +288,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1549158376879078904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b47cca09531bb454cba0678d8f2273ce, type: 3}
+  m_Script: {fileID: 11500000, guid: d66dfd432523745238a9538d298f2d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 1549158378687940909}
@@ -345,7 +365,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: a285cadff1add4348826209ef759c934, type: 3}
     m_FontSize: 111
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 111
     m_Alignment: 5
@@ -582,7 +602,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: a285cadff1add4348826209ef759c934, type: 3}
     m_FontSize: 111
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 111
     m_Alignment: 5
@@ -626,7 +646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.8, y: -65.2}
+  m_AnchoredPosition: {x: -0.8, y: -137}
   m_SizeDelta: {x: 970.63, y: 60.486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1549158378202432800
@@ -661,7 +681,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 5b76c56b10e5e4e2981016ac9c8c88b6, type: 3}
     m_FontSize: 51
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 64
     m_Alignment: 4
@@ -698,14 +718,14 @@ RectTransform:
   m_GameObject: {fileID: 1549158378687940907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25834, y: 0.25834, z: 0.25834}
+  m_LocalScale: {x: 0.48717758, y: 0.48717758, z: 0.48717758}
   m_Children: []
   m_Father: {fileID: 1549158376879078905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.8000183, y: -32.4}
+  m_AnchoredPosition: {x: 0.80002, y: -86}
   m_SizeDelta: {x: 796.35, y: 155.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1549158378687940910
@@ -740,7 +760,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7c68c373dc05e48849df60e7e4666374, type: 3}
     m_FontSize: 109
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 111
     m_Alignment: 4
@@ -785,7 +805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -98.8}
+  m_AnchoredPosition: {x: 0, y: -214}
   m_SizeDelta: {x: 1048.2, y: 143.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1549158378735691684
@@ -820,7 +840,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: a285cadff1add4348826209ef759c934, type: 3}
     m_FontSize: 116
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 116
     m_Alignment: 4
@@ -899,7 +919,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: a285cadff1add4348826209ef759c934, type: 3}
     m_FontSize: 111
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 111
     m_Alignment: 5
@@ -926,7 +946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1549158378967715522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -946,7 +966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 75, y: -42}
+  m_AnchoredPosition: {x: 225, y: -109}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1549158378967715524

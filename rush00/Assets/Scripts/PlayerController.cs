@@ -63,7 +63,11 @@ public class PlayerController : MonoBehaviour
             }
         }
         else if (isKilled)
+        {
+            SoundManager.instance.PlaySingle(aLose);
             StartCoroutine(Killed());
+        }
+            
         CheckEnemy();
     }
 
@@ -83,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Killed()
     {
-        SoundManager.instance.PlaySingle(aLose);
+        
         transform.Rotate(Vector3.forward * 500f * Time.deltaTime);
         yield return new WaitForSeconds(2.0f);
         // Destroy(this.gameObject);
