@@ -13,7 +13,6 @@ public class Background : MonoBehaviour
 
     //eiffel Tower
     public Image eiffel;
-    float time = 0;
     bool isLarged = true;
     private Coroutine coroutine;
 

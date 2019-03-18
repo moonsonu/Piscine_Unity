@@ -13,6 +13,7 @@ public class PopupController : MonoBehaviour
     public GameObject Won;
     public Weapon currentWeapon;
     private bool init;
+    public AudioClip aWon;
 
     void Start()
     {
@@ -48,6 +49,9 @@ public class PopupController : MonoBehaviour
         else if (!playerController.EquipWeapon)
             ResetText();
         if (playerController.IsWon)
+        {
+            SoundManager.instance.PlaySingle(aWon);
             Won.SetActive(true);
+        }
     }
 }
