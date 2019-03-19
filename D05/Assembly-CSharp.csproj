@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ex00\Scripts\CameraController.cs" />
-    <Compile Include="Assets\ex01\Scripts\GolfBall.cs" />
-    <Compile Include="Assets\ex01\Scripts\KeyController.cs" />
-    <Compile Include="Assets\ex01\Scripts\UIController.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\GolfBall.cs" />
+    <Compile Include="Assets\Scripts\KeyController.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/ksonu/D05/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
