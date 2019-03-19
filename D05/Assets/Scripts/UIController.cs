@@ -7,21 +7,19 @@ public class UIController : MonoBehaviour
 {
     public Text shot;
     public Image powerBar;
-    public KeyController barUpdate;
+    [SerializeField] private GameController gm;
     private float bar;
 
-    // Start is called before the first frame update
     void Start()
     {
-        bar = barUpdate.Power;
-        shot.text = "SHOT " + barUpdate.shot.ToString(); 
+        bar = gm.Power;
+        shot.text = "SHOT " + gm.Shot.ToString(); 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        bar = barUpdate.Power;
+        bar = gm.Power;
         powerBar.fillAmount = bar;
-        shot.text = "SHOT " + barUpdate.shot.ToString();
+        shot.text = "SHOT " + gm.Shot.ToString();
     }
 }

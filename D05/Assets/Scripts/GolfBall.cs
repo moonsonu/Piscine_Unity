@@ -4,109 +4,58 @@ using UnityEngine;
 
 public class GolfBall : MonoBehaviour
 {
-    public bool isPowered = false;
-    private Rigidbody rb;
-    public AudioClip shootSound;
-    public AudioClip GameoverSound;
-    private AudioSource sound;
-    public bool isMoving = false;
-    public bool isGameover = false;
-    public bool isNextlevel = false;
-    public bool isRotate;
-    public float time;
-    public GameObject arrow;
+    [SerializeField] private GameController gm;
+    [SerializeField] private CameraController cam;
 
-    [SerializeField] private CameraController cameraController;
-    [SerializeField] private KeyController keyController;
-    void Start()
+    private bool isGameover = false;
+    private bool isNext = false;
+    private Rigidbody rb;
+    private bool isMoving;
+    public bool IsMoving { get { return isMoving; } }
+    private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        sound = GetComponent<AudioSource>();
-        isRotate = true;
     }
 
-    void shoot()
+    public void Rotate()
     {
-        Debug.Log("space" + keyController.Power);
-        rb.velocity = transform.forward * keyController.Power * 50;
-        //Debug.Log(movement);
-        //rb.AddForce(Camera.main.transform.forward * keyController.Power * 1000);
+        cam.transform.parent = this.transform;
+        var v3 = new Vector3(0, Input.GetAxis("Horizontal"), 0);
+        transform.Rotate((v3) * 50 * Time.deltaTime);
+        cam.gameObject.transform.LookAt(this.transform);
+    }
+
+    public void NotRotate()
+    {
+        Debug.Log("dkdsyd");
+        cam.transform.parent = null;
+    }
+
+    public void shoot(float power)
+    {
+        rb.velocity = transform.forward * power * 50;
         isMoving = true;
     }
-
-    public void rotateBall()
+    private void Update()
     {
-        if (isRotate)
-        {
-                //arrow.SetActive(true);
-            cameraController.transform.parent = this.transform;
-            var v3 = new Vector3(0, Input.GetAxis("Horizontal"), 0);
-            transform.Rotate(v3* 50 * Time.deltaTime);
-
-                //cameraController.gameObject.transform.rotation = transform.rotation;
-
-            cameraController.gameObject.transform.LookAt(this.transform);
-        }
-
-        if (!isRotate)
-            cameraController.transform.parent = null;
-    }
-
-    void Update()
-    {
-        if (cameraController.IsView)
-            isRotate = false;
-        if (!cameraController.IsView)
-            isRotate = true;
-        if (isRotate)
-        {
-            //arrow.SetActive(true);
-            cameraController.transform.parent = this.transform;
-            var v3 = new Vector3(0, Input.GetAxis("Horizontal"), 0);
-            transform.Rotate(v3 * 50 * Time.deltaTime);
-
-            //cameraController.gameObject.transform.rotation = transform.rotation;
-
-            cameraController.gameObject.transform.LookAt(this.transform);
-        }
-
-        if (!isRotate)
-            cameraController.transform.parent = null;
-        time += Time.deltaTime;
-        if (!cameraController.IsView)
-        {
-            if (isPowered)
-            {
-                shoot();
-                isPowered = false;
-            }
-        }
-
         if (isMoving)
         {
+            NotRotate();
             float threshold = 100f;
             float gbVel = rb.velocity.sqrMagnitude;
             bool stop;
 
             Debug.Log(gbVel);
             if (gbVel < threshold)
-            {
                 stop = true;
-                //Debug.Log(stop);
-            }
             else
-            {
                 stop = false;
-                //Debug.Log("stop " + stop);
-            }
 
             if (stop)
             {
-                //Debug.Log("drag");
                 rb.drag = 10;
                 rb.angularDrag = 10;
                 isMoving = false;
-                isRotate = true;
             }
             else if (!stop)
             {
@@ -115,32 +64,38 @@ public class GolfBall : MonoBehaviour
 
             }
         }
-        if (!isMoving)
+
+        if (isGameover)
         {
-            isRotate = true;
-            rotateBall();
+            GameObject gameover = GameObject.Find("GameOverUI");
+            Debug.Log(gameover.GetComponentInChildren<Canvas>());
+            gameover.GetComponent<Canvas>().enabled = true;
+            if (Input.GetKeyDown(KeyCode.Escape))
+                Application.Quit();
         }
 
-        //else
+        if (isNext)
+        {
+            GameObject nextLevel = GameObject.Find("NextLevelUI");
+            nextLevel.GetComponent<Canvas>().enabled = true;
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Debug.Log("nextLevel");
+            }
+        }
+        //if (!isMoving)
         //{
-        //    sound.clip = shootSound;
-        //    sound.Play();
-        //}
+        //    gm.NotView();
 
-        //if (isGameover)
-        //{
-        //    sound.clip = GameoverSound;
-        //    sound.Play();
-        //    GameObject gameover = GameObject.Find("GameOverUI");
-        //    Debug.Log(gameover.GetComponentInChildren<Canvas>());
-        //    gameover.GetComponent<Canvas>().enabled = true;
         //}
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Hole"))
-            Debug.Log("Success!!!");
+        {
+            isNext = true;
+
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {

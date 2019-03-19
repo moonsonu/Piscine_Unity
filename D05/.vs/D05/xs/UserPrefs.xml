@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{4D0711D2-8A4B-9299-DE01-FECEED924757}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KeyController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIController.cs">
     <Files>
-      <File FileName="Assets/Scripts/GolfBall.cs" Line="152" Column="10" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="94" Column="46" />
-      <File FileName="Assets/Scripts/KeyController.cs" Line="53" Column="13" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="37" Column="10" />
+      <File FileName="Assets/Scripts/GolfBall.cs" Line="94" Column="6" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="37" Column="6" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="16" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
