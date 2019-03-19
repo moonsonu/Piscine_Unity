@@ -8,6 +8,8 @@ TagManager:
   - Hole
   - Water
   - Arrow
+  - Hole1
+  - Hole2
   layers:
   - Default
   - TransparentFX

@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
     public float Shot { get { return shot; } }
     public int indexClub = 0;
     private int maxClub = 3;
+    private int level = -1;
+    private int maxLevel = 3;
 
     private Vector3 offset;
     [SerializeField] private GameObject viewPoint;
@@ -29,7 +31,7 @@ public class GameController : MonoBehaviour
     {
         isView = false;
         offset = cam.transform.position - ball.transform.position;
-        orgBallPos = ball.transform.rotation;
+        //orgBallPos = ball.transform.rotation;
     }
 
     public void View()
@@ -78,11 +80,13 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Equals) || Input.GetKeyDown(KeyCode.KeypadPlus))
         {
             if (indexClub < maxClub)
+            {
+                currentClub = Clubs.transform.GetChild(indexClub).gameObject;
+                clubName.text = currentClub.name;
                 indexClub++;
+            }
             else
                 indexClub = 0;
-            currentClub = Clubs.transform.GetChild(indexClub).gameObject;
-            clubName.text = currentClub.name;
         }
 
 
