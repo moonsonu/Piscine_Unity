@@ -10,6 +10,13 @@ public class UIController : MonoBehaviour
     [SerializeField] private GameController gm;
     private float bar;
 
+    public Text p1Score;
+    public Text p2Score;
+    public Text p3Score;
+
+    public Text hole;
+    public Text par;
+
     void Start()
     {
         bar = gm.Power;
@@ -21,5 +28,21 @@ public class UIController : MonoBehaviour
         bar = gm.Power;
         powerBar.fillAmount = bar;
         shot.text = "SHOT " + gm.Shot.ToString();
+    }
+
+    public void SettabPanel()
+    {
+        if (gm.level == 1)
+        {
+            p1Score.text = gm.Shot.ToString();
+        }
+        if (gm.level == 2)
+        {
+            p2Score.text = gm.Shot.ToString();
+        }
+        if (gm.level == 3)
+        {
+            p3Score.text = gm.Shot.ToString();
+        }
     }
 }

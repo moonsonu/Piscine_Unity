@@ -9,6 +9,11 @@ public class CameraController : MonoBehaviour
     private float speed = 20f;
     private float mouseX;
     private float mouseY;
+    private Vector3 Pos;
+    private void Start()
+    {
+        Pos = transform.position;
+    }
 
     public void Move()
     {
