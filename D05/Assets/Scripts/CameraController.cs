@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public enum CameraState { Free, Aiming, Following };
+    public CameraState cs;
+    public Transform ball;
+
+    public Vector3 cameraBallOffset;
+
     [SerializeField] private GameController gm;
 
     private float speed = 20f;
@@ -12,7 +18,43 @@ public class CameraController : MonoBehaviour
     private Vector3 Pos;
     private void Start()
     {
-        Pos = transform.position;
+        cs = CameraState.Aiming;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            this.cs = CameraState.Free;
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            this.cs = CameraState.Aiming;
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            this.cs = CameraState.Following;
+
+
+        switch (cs)
+        {
+            case CameraState.Free:
+                Move();
+                break;
+            case CameraState.Aiming:
+                Aim();
+                break;
+            case CameraState.Following:
+                Follow();
+                break;
+        }
+    }
+
+    public void Aim()
+    {
+        transform.position = ball.transform.position + this.cameraBallOffset;
+        var v3 = new Vector3(0, Input.GetAxis("Horizontal"), 0);
+        transform.Rotate(v3 * 50 * Time.deltaTime);
+    }
+
+    public void Follow()
+    {
+        transform.position = ball.transform.position + this.cameraBallOffset;
     }
 
     public void Move()

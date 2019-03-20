@@ -5,44 +5,31 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Text shot;
+    public Text shotText;
     public Image powerBar;
+    public Text clubName;
+    public Text holeText;
+    public Text parText;
     [SerializeField] private GameController gm;
     private float bar;
 
-    public Text p1Score;
-    public Text p2Score;
-    public Text p3Score;
-
-    public Text hole;
-    public Text par;
-
-    void Start()
+    public void SetShot(int shot)
     {
-        bar = gm.Power;
-        shot.text = "SHOT " + gm.Shot.ToString(); 
+        shotText.text = shot.ToString();
     }
 
-    void Update()
+    public void PowerBar(float power)
     {
-        bar = gm.Power;
-        powerBar.fillAmount = bar;
-        shot.text = "SHOT " + gm.Shot.ToString();
+        powerBar.fillAmount = power;
+    }
+    public void SetClubName(string name)
+    {
+        clubName.text = name;
     }
 
-    public void SettabPanel()
+    public void setLevelInfo(int holeNum, int parNum)
     {
-        if (gm.level == 1)
-        {
-            p1Score.text = gm.Shot.ToString();
-        }
-        if (gm.level == 2)
-        {
-            p2Score.text = gm.Shot.ToString();
-        }
-        if (gm.level == 3)
-        {
-            p3Score.text = gm.Shot.ToString();
-        }
+        holeText.text = "HOLE " + holeNum.ToString();
+        parText.text = "(PAR " + parNum.ToString() + ")";
     }
 }
