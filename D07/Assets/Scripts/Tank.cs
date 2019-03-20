@@ -9,6 +9,7 @@ public class Tank : MonoBehaviour
     public Camera cam;
     //private bool isHp;
     //private bool isAmmo;
+    public float range;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class Tank : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //fire machine gun
-            //Shoot();
+            Shoot();
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -31,18 +32,18 @@ public class Tank : MonoBehaviour
             }
         }
     }
-    //void Shoot()
-    //{
-    //    Vector3 orgRay = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
-    //    RaycastHit hit;
-    //    if (Physics.Raycast(orgRay, cam.transform.forward, out hit))
-    //    {
-    //        if (hit.gameobject.tag == "Enemy")
-    //        {
-    //            Debug.Log("죽어랏");
-    //        }
-    //    }
-    //}
+    void Shoot()
+    {
+        Vector3 orgRay = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+        if (Physics.Raycast(orgRay, cam.transform.forward, out hit, range))
+        {
+            if (hit.transform.tag == "Enemy")
+            {
+                Debug.Log("죽어랏");
+            }
+        }
+    }
 }
 
 

@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     private Speed speed;
     private Rigidbody rb;
     private float velocity;
+    public Camera cam;
 
     //float mouseY = 0;
     //Vector3 orgPos;
@@ -45,6 +46,9 @@ public class Movement : MonoBehaviour
         Vector3 move = transform.forward * moveVer * velocity;
         rb.MovePosition(transform.position + move * Time.deltaTime);
 
+        var v3 = new Vector3(0, Input.GetAxis("Mouse X"), 0);
+        transform.Rotate((v3) * 50 * Time.deltaTime);
+        cam.gameObject.transform.LookAt(this.transform);
         //float mouseY = Input.GetAxis("Mouse X");
         //Vector3 rot = new Vector3(0, mouseY, 0);
         //cam.transform.Rotate(rot);
