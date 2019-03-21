@@ -62,8 +62,12 @@
   <ItemGroup>
     <Compile Include="Assets\D08\Scripts\AnimationController.cs" />
     <Compile Include="Assets\D08\Scripts\CameraController.cs" />
+    <Compile Include="Assets\D08\Scripts\CharacterStats.cs" />
+    <Compile Include="Assets\D08\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\D08\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\D08\Scripts\Movement.cs" />
     <Compile Include="Assets\D08\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\D08\Scripts\Stat.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/ksonu/D08/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

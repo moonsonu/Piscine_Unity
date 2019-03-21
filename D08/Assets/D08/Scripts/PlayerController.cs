@@ -6,39 +6,141 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Camera cam;
-    public LayerMask movementMask;
     Movement movement;
-    private Animator animator;
-    public bool isRun = false;
 
-    void Start()
+    public GameObject currentEnemy;
+    public float range;
+
+    public bool isAttack;
+    public bool isDead;
+
+    private void Start()
     {
+        isAttack = false;
         cam = Camera.main;
         movement = GetComponent<Movement>();
-        animator = GetComponent<Animator>();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100, movementMask))
+            if (Physics.Raycast(ray, out hit))
             {
-                isRun = true;
-                movement.MoveToPoint(hit.point);
+                if (hit.collider.tag == "Enemy")
+                {
+                    Debug.Log("enemy clicked");
+                    currentEnemy = hit.transform.gameObject;
+                    //range = Vector3.Distance(transform.position, currentEnemy.transform.position);
+                    isAttack = true;
+                }
+                else
+                {
+                    isAttack = false;
+                    movement.MoveToPoint(hit.point);
+                    currentEnemy = null;
+                }
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (isDead)
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                
-            }
+            //StartCoroutine(GameOver());
         }
     }
+
+    //IEnumerator GameOver()
+    //{
+    //    yield return new WaitForSeconds(2f);
+    //    transform.Translate(Vector3.down * Time.deltaTime * shrinkSpeed);
+    //    if (transform.position.y < 0)
+    //    {
+    //        Debug.Log("Game Over");
+    //        //gameover GUI;
+    //    }
+    //}
 }
+
+
+
+//Camera cam;
+//Movement movement;
+
+//public GameObject enemy;
+//public EnemyController ec;
+
+//public int hp;
+//public int damage;
+
+//public bool isAttack;
+//public bool isDead;
+
+//void Start()
+//{
+//    hp = 30;
+//    damage = 5;
+//    cam = Camera.main;
+//    movement = GetComponent<Movement>();
+//}
+
+//void Update()
+//{
+//    Vector3 offset = enemy.transform.position - transform.position;
+//    if (Input.GetMouseButtonDown(0))
+//    {
+//        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+//        RaycastHit hit;
+//        if (Physics.Raycast(ray, out hit))
+//        {
+//            movement.MoveToPoint(hit.point);
+//        }
+//    }
+//    if (Input.GetMouseButtonDown(1))
+//    {
+//        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+//        RaycastHit hit;
+//        if (Physics.Raycast(ray, out hit, 100))
+//        {
+//            Debug.Log(hit.collider.tag);
+//            if (hit.collider.tag == "Enemy")
+//            {
+//                isAttack = true;
+//                StartCoroutine(Attack(hit.collider.gameObject));
+//            }
+//        }
+//    }
+//}
+
+//IEnumerator Attack(GameObject enemy)
+//{
+//    ec.GetDamage(enemy);
+//    yield return new WaitForSeconds(2f);
+//    isAttack = false;
+//}
+
+//public void GetDamage(int damage)
+//{
+//    if (hp > 0)
+//    {
+//        hp -= damage;
+//        if (hp <= 0)
+//            isDead = true;
+//    }
+//}
+
+//{
+//    yield return new WaitForSeconds(2.0f);
+//    navMeshAgent.enabled = false;
+//    enemyState = State.SINKING;
+//    yield return new WaitForSeconds(3.0f);
+//    GameObject potionPre = null;
+//    if (Random.value <= 0.5f)
+//    {
+//        potionPre = Instantiate(potion);
+//        potionPre.transform.position = new Vector3(transform.position.x, transform.position.y + 7.0f, transform.position.z);
+//    }
+//    yield return new WaitForSeconds(2.0f);
+//    Destroy(gameObject);
+//}

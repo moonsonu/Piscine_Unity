@@ -5,9 +5,9 @@ using UnityEngine.AI;
 
 public class AnimationController : MonoBehaviour
 {
-    const float locomotionAnimationSmoothTime = 0.1f;
     Animator animator;
     NavMeshAgent agent;
+    public PlayerController playerController;
 
     void Start()
     {
@@ -18,7 +18,14 @@ public class AnimationController : MonoBehaviour
     void Update()
     {
         float speedPercent = agent.velocity.magnitude / agent.speed;
-        animator.SetFloat("SpeedPercent", speedPercent, locomotionAnimationSmoothTime, Time.deltaTime);
+        animator.SetFloat("SpeedPercent", speedPercent);
 
+        animator.SetBool("isAttack", playerController.isAttack);
+        if (playerController.isDead)
+        {
+            animator.SetTrigger("isDead");
+            playerController.isDead = false;
+            //Game Over GUI?
+        }
     }
 }

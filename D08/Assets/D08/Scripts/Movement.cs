@@ -7,17 +7,14 @@ using UnityEngine.AI;
 public class Movement : MonoBehaviour
 {
     NavMeshAgent agent;
-    PlayerController playerController;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        playerController = GetComponent<PlayerController>();
     }
 
     public void MoveToPoint (Vector3 point)
     {
         agent.SetDestination(point);
-        playerController.isRun = false;
     }
 }
