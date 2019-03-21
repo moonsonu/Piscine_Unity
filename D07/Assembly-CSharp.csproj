@@ -63,8 +63,9 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Tank.cs" />
-    <Compile Include="Assets\test.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
     <None Include="Assets\Models\tank\README.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/ksonu/D07/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
