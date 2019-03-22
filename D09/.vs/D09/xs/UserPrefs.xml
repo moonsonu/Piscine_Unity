@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{D08DFDFA-0FBE-F284-B62A-3D6D19D4B102}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/D09/Scripts/Enemy.cs">
+    <Files>
+      <File FileName="Assets/D09/Scripts/WeaponController.cs" Line="13" Column="1" />
+      <File FileName="Assets/D09/Scripts/Weapon.cs" Line="17" Column="30" />
+      <File FileName="Assets/D09/Scripts/EnemySpawner.cs" Line="32" Column="10" />
+      <File FileName="Assets/D09/Scripts/Enemy.cs" Line="12" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
