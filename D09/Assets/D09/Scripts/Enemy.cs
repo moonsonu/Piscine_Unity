@@ -5,107 +5,84 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    //public int HP = 100;
-    public float lookRadius = 1000f;
-    //public bool isDead;
-    [SerializeField] private Transform target;
-    private NavMeshAgent agent;
-    private Animator anim;
-    //public Tank tank;
-    //public int damage = 5;
-    //public GameObject shootPoint;
-    //public ParticleSystem gunPart;
-    //public ParticleSystem damagePart;
-    //public bool isReadytoShoot;
-    //public AudioClip aGun;
-    //public AudioClip aDead;
+    Animator animator;
+    NavMeshAgent agent;
+    public float lookRadius = 10f;
+    public float shrinkSpeed = 0.1f;
 
-    // Start is called before the first frame update
+    public Transform target;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
-        //isDead = false;
-        //isReadytoShoot = true;
+        animator = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-        agent.SetDestination(target.position);
-        anim.SetBool("isWalk", true);
 
         if (distance <= lookRadius)
         {
+            agent.SetDestination(target.position);
+            Debug.Log(agent.velocity.magnitude + " / " + agent.speed + " = " + agent.velocity.magnitude / agent.speed);
+            float speedPercent = agent.velocity.magnitude / agent.speed;
+            animator.SetFloat("SpeedPercent", speedPercent);
 
             if (distance <= agent.stoppingDistance)
             {
                 FaceTarget();
+                //SetBool("isAttack", true);
+                //StartCoroutine(Attack());
             }
-            //Attack();
+            //else
+                //animator.SetBool("isAttack", false);
         }
-
-        //if (isDead)
-            //StartCoroutine(Die());
+        else
+            animator.SetFloat("SpeedPercent", 0);
     }
 
-    //IEnumerator Die()
+    //IEnumerator Attack()
     //{
-
-    //    yield return new WaitForSeconds(0.5f);
-    //    SoundManager.instance.PlaySingle(aDead);
-    //    Destroy(gameObject);
-    //}
-
-    //void Attack()
-    //{
-    //    Debug.Log("Attackkkkk");
-    //    RaycastHit hit;
-    //    if (Physics.Raycast(shootPoint.transform.position, shootPoint.transform.forward, out hit))
+    //    float chance = Random.value;
+    //    finalDamage = baseDamage * (1 - (targetStat.myStats.getAGI / 200));
+    //    if (chance > myStats.getHitChance(targetStat.myStats.getAGI))
     //    {
-    //        Debug.DrawRay(shootPoint.transform.position, shootPoint.transform.forward * hit.distance, Color.black);
-    //        Debug.Log(hit.transform.name);
-    //        if (hit.transform.tag == "Player")
+    //        if (myStats.getHp > 0)
+    //            targetStat.myStats.getDamaged(finalDamage);
+    //        else if (myStats.getHp <= 0)
     //        {
-    //            if (isReadytoShoot)
-    //                StartCoroutine(Shoot());
-
+    //            //Debug.Log("game over, restart the game");
     //        }
     //    }
-    //}
-
-    //IEnumerator Shoot()
-    //{
-    //    isReadytoShoot = false;
-    //    gunPart.Play();
-    //    SoundManager.instance.PlaySingle(aGun);
-    //    tank.GetDamage(damage);
-    //    yield return new WaitForSeconds(7f);
-    //    isReadytoShoot = true;
+    //    yield return new WaitForSeconds(1f);
     //}
 
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5);
     }
-
-    //public void GetDamage(int damage)
+    //public void Dead()
     //{
-    //    if (HP > 0)
-    //    {
-    //        HP -= damage;
-    //        Debug.Log("Attacked Enemy! Damaged: " + damage + " HP left : " + HP);
-    //        if (HP <= 0)
-    //        {
-    //            damagePart.Play();
-    //            isDead = true;
-    //        }
-    //    }
+    //    animator.SetTrigger("isDead");
+    //    agent.enabled = false;
+    //    //yield return new WaitForSeconds(2f);
+
+    //    StartCoroutine(Shrink());
+
     //}
 
+    //IEnumerator Shrink()
+    //{
+    //    yield return new WaitForSeconds(2f);
+    //    transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f) * Time.deltaTime;
+    //    if (transform.localScale.y < 0)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
