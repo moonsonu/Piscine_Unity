@@ -10,10 +10,11 @@ public class PlayerController : MonoBehaviour
     public Stat myStats;
     public EnemyController target;
     public GameObject currentEnemy;
+    public UIController ui;
     public float range;
     public bool isAttack;
     public bool isDead;
-    public int maxHp;
+    public int maxHp = 100;
     public int baseDamage;
     public int finalDamage;
 
@@ -28,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        //ui.SetHPbar();
+        //ui.SetXPbar();
         if (myStats.getHp > maxHp)
         {
             //level up
@@ -45,7 +48,8 @@ public class PlayerController : MonoBehaviour
                     currentEnemy = hit.transform.gameObject;
                     //range = Vector3.Distance(transform.position, currentEnemy.transform.position);
                     isAttack = true;
-                    StartCoroutine(Attack());
+                    Attack();
+                    //StartCoroutine(Attack());
                 }
                 else
                 {
@@ -62,14 +66,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator Attack()
+    void Attack()
     {
         float chance = Random.value;
         target = currentEnemy.GetComponent<EnemyController>();
         finalDamage = baseDamage * (1 - (target.myStats.getAGI / 200));
         if (chance > myStats.getHitChance(target.myStats.getAGI))
-            target.myStats.getDamaged(finalDamage);
-        yield return new WaitForSeconds(1f);
+        {
+            if (myStats.getHp > 0)
+                target.myStats.getDamaged(finalDamage);
+            else if (myStats.getHp <= 0)
+            {
+                target.Dead();
+                myStats.setXp = 160 + myStats.getXp;
+            }
+        }
+        //yield return new WaitForSeconds(1f);
     }
 
     //IEnumerator GameOver()

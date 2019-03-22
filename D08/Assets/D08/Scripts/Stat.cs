@@ -26,7 +26,7 @@ public class Stat
         hp = 100;
         GetMinMaxDamage();
         level = 1;
-        xp = 400;
+        xp = 0;
         money = 100;
     }
 
@@ -58,7 +58,7 @@ public class Stat
             hp -= dam;
             if (hp <= 0)
             {
-                //dead
+                
             }
         }
     }

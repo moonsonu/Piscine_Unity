@@ -40,29 +40,29 @@ public class EnemyController : MonoBehaviour
             if (distance <= agent.stoppingDistance)
             {
                 FaceTarget();
-                animator.SetBool("isAttack", isAttack);
+                animator.SetBool("isAttack", true);
                 StartCoroutine(Attack());
             }
+            else
+                animator.SetBool("isAttack", false);
         }
         else
             animator.SetFloat("SpeedPercent", 0);
-
-        if (isDead)
-        {
-            animator.SetTrigger("isDead");
-            isDead = false;
-            Destroy(gameObject);
-        }
-
     }
 
     IEnumerator Attack()
     {
-        Debug.Log("attack player!");
         float chance = Random.value;
         finalDamage = baseDamage * (1 - (targetStat.myStats.getAGI / 200));
         if (chance > myStats.getHitChance(targetStat.myStats.getAGI))
-            targetStat.myStats.getDamaged(finalDamage);
+        {
+            if (myStats.getHp > 0)
+                targetStat.myStats.getDamaged(finalDamage);
+            else if (myStats.getHp <= 0)
+            {
+                //Debug.Log("game over, restart the game");
+            }
+        }
         yield return new WaitForSeconds(1f);
     }
 
@@ -72,19 +72,25 @@ public class EnemyController : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5);
     }
-    //IEnumerator Dead()
-    //{
-    //    agent.enabled = false;
-    //    //yield return new WaitForSeconds(2f);
-    //    transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f) * Time.deltaTime;
-    //    if (transform.localScale.y < 0)
-    //    {
-    //        isDead = false;
-    //        Debug.Log("Game Over");
-    //        Destroy(gameObject);
-    //        //gameover GUI;
-    //    }
-    //}
+    public void Dead()
+    {
+        animator.SetTrigger("isDead");
+        agent.enabled = false;
+        //yield return new WaitForSeconds(2f);
+
+        StartCoroutine(Shrink());
+
+    }
+
+    IEnumerator Shrink()
+    {
+        yield return new WaitForSeconds(2f);
+        transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f) * Time.deltaTime;
+        if (transform.localScale.y < 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
 
 //public float lookRadius = 10f;
