@@ -7,18 +7,24 @@ public class EnemyController : MonoBehaviour
 {
     Animator animator;
     NavMeshAgent agent;
-
+    public Stat myStats;
+    public PlayerController targetStat;
     public float lookRadius = 10f;
     public float shrinkSpeed = 0.1f;
 
     public Transform target;
     public bool isAttack;
     public bool isDead = false;
+    public int maxHp;
+    public int baseDamage;
+    public int finalDamage;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
+        myStats.InitStat();
+        baseDamage = myStats.getMinDamage;
     }
 
     void Update()
@@ -34,12 +40,12 @@ public class EnemyController : MonoBehaviour
             if (distance <= agent.stoppingDistance)
             {
                 FaceTarget();
-                //Attack();
+                animator.SetBool("isAttack", isAttack);
+                StartCoroutine(Attack());
             }
         }
         else
             animator.SetFloat("SpeedPercent", 0);
-        //animator.SetBool("isAttack", isAttack);
 
         if (isDead)
         {
@@ -50,13 +56,22 @@ public class EnemyController : MonoBehaviour
 
     }
 
+    IEnumerator Attack()
+    {
+        Debug.Log("attack player!");
+        float chance = Random.value;
+        finalDamage = baseDamage * (1 - (targetStat.myStats.getAGI / 200));
+        if (chance > myStats.getHitChance(targetStat.myStats.getAGI))
+            targetStat.myStats.getDamaged(finalDamage);
+        yield return new WaitForSeconds(1f);
+    }
+
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5);
     }
-
     //IEnumerator Dead()
     //{
     //    agent.enabled = false;

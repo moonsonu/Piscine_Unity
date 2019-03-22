@@ -599,7 +599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1325846995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,6 +924,11 @@ PrefabInstance:
       propertyPath: ec
       value: 
       objectReference: {fileID: 712940244}
+    - target: {fileID: 4829138259242440844, guid: 6e6d6063b96f0490f8bfdfd37f00f9c5,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 712940244}
     - target: {fileID: 4829138259242440842, guid: 6e6d6063b96f0490f8bfdfd37f00f9c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -984,6 +989,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4829138259242440843, guid: 6e6d6063b96f0490f8bfdfd37f00f9c5,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4829138259242440840, guid: 6e6d6063b96f0490f8bfdfd37f00f9c5,
         type: 3}
       propertyPath: m_Enabled
@@ -1028,6 +1038,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMale
       objectReference: {fileID: 0}
+    - target: {fileID: 7766679360485040767, guid: 4457c84d44d374d32b9f5e72858e7e36,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1946202315}
+    - target: {fileID: 7766679360485040767, guid: 4457c84d44d374d32b9f5e72858e7e36,
+        type: 3}
+      propertyPath: isAttack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766679360485040767, guid: 4457c84d44d374d32b9f5e72858e7e36,
+        type: 3}
+      propertyPath: targetStat
+      value: 
+      objectReference: {fileID: 915514249}
     - target: {fileID: 7766679360485040760, guid: 4457c84d44d374d32b9f5e72858e7e36,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1088,11 +1113,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7766679360485040767, guid: 4457c84d44d374d32b9f5e72858e7e36,
+    - target: {fileID: 7766679360485040761, guid: 4457c84d44d374d32b9f5e72858e7e36,
         type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1946202315}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4457c84d44d374d32b9f5e72858e7e36, type: 3}
 --- !u!1001 &7966788877813859163

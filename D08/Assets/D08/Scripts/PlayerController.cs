@@ -7,22 +7,32 @@ public class PlayerController : MonoBehaviour
 {
     Camera cam;
     Movement movement;
-
+    public Stat myStats;
+    public EnemyController target;
     public GameObject currentEnemy;
     public float range;
-
     public bool isAttack;
     public bool isDead;
+    public int maxHp;
+    public int baseDamage;
+    public int finalDamage;
 
     private void Start()
     {
         isAttack = false;
         cam = Camera.main;
         movement = GetComponent<Movement>();
+        myStats.InitStat();
+        baseDamage = myStats.getMinDamage;
     }
 
     private void Update()
     {
+        if (myStats.getHp > maxHp)
+        {
+            //level up
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -35,6 +45,7 @@ public class PlayerController : MonoBehaviour
                     currentEnemy = hit.transform.gameObject;
                     //range = Vector3.Distance(transform.position, currentEnemy.transform.position);
                     isAttack = true;
+                    StartCoroutine(Attack());
                 }
                 else
                 {
@@ -49,6 +60,16 @@ public class PlayerController : MonoBehaviour
         {
             //StartCoroutine(GameOver());
         }
+    }
+
+    IEnumerator Attack()
+    {
+        float chance = Random.value;
+        target = currentEnemy.GetComponent<EnemyController>();
+        finalDamage = baseDamage * (1 - (target.myStats.getAGI / 200));
+        if (chance > myStats.getHitChance(target.myStats.getAGI))
+            target.myStats.getDamaged(finalDamage);
+        yield return new WaitForSeconds(1f);
     }
 
     //IEnumerator GameOver()
