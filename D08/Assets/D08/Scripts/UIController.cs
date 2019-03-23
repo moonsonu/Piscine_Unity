@@ -17,36 +17,43 @@ public class UIController : MonoBehaviour
 
     public PlayerController playerController;
 
+    private void Start()
+    {
+        SetHPbar();
+        SetXPbar();
+        SetInfoText();
+    }
+
     private void Update()
     {
-        playerHPbar.fillAmount = playerController.myStats.getHp / playerController.maxHp;
-        playerXPbar.fillAmount = playerController.myStats.getXp / 400;
-        playerHPtext.text = playerController.myStats.getHp.ToString() + "/" + playerController.maxHp;
-        playerXPtext.text = playerController.myStats.getXp.ToString() + "/400";
-        playerSTRtext.text = playerController.myStats.getSTR.ToString();
-        playerAGItext.text = playerController.myStats.getAGI.ToString();
-        playerCONtext.text = playerController.myStats.getCON.ToString();
-        playerARMtext.text = playerController.myStats.getArmor.ToString();
+        playerHPbar.fillAmount = playerController.playerStat.getHp / playerController.maxHP;
+        playerXPbar.fillAmount = playerController.playerStat.getXp / playerController.maxXP;
+        playerHPtext.text = playerController.playerStat.getHp.ToString() + "/" + playerController.maxHP;
+        playerXPtext.text = playerController.playerStat.getXp.ToString() + "/400";
+        playerSTRtext.text = playerController.playerStat.getSTR.ToString();
+        playerAGItext.text = playerController.playerStat.getAGI.ToString();
+        playerCONtext.text = playerController.playerStat.getCON.ToString();
+        playerARMtext.text = playerController.playerStat.getArmor.ToString();
     }
-    //public void SetHPbar()
-    //{
-    //    playerHPbar.fillAmount = playerController.myStats.getHp / playerController.maxHp;
-    //}
+    public void SetHPbar()
+    {
+        playerHPbar.fillAmount = playerController.playerStat.getHp / playerController.maxHP;
+    }
 
-    //public void SetXPbar()
-    //{
-    //    playerXPbar.fillAmount = playerController.myStats.getXp / 400;
-    //}
+    public void SetXPbar()
+    {
+        playerXPbar.fillAmount = playerController.playerStat.getXp / playerController.maxXP;
+    }
 
-    //public void SetInfoText()
-    //{
-    //    playerHPtext.text = playerController.myStats.getHp.ToString() + "/" + playerController.maxHp;
-    //    playerXPtext.text = playerController.myStats.getXp.ToString() + "/400";
-    //    playerSTRtext.text = playerController.myStats.getSTR.ToString();
-    //    playerAGItext.text = playerController.myStats.getAGI.ToString();
-    //    playerCONtext.text = playerController.myStats.getCON.ToString();
-    //    playerARMtext.text = playerController.myStats.getArmor.ToString();
-    //}
+    public void SetInfoText()
+    {
+        playerHPtext.text = playerController.playerStat.getHp.ToString() + "/" + playerController.maxHP;
+        playerXPtext.text = playerController.playerStat.getXp.ToString() + "/400";
+        playerSTRtext.text = playerController.playerStat.getSTR.ToString();
+        playerAGItext.text = playerController.playerStat.getAGI.ToString();
+        playerCONtext.text = playerController.playerStat.getCON.ToString();
+        playerARMtext.text = playerController.playerStat.getArmor.ToString();
+    }
 
     public void ActiveInfo()
     {

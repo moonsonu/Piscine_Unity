@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemySpawn : MonoBehaviour
 {
     public GameObject[] enemy;
-    private GameObject currentEnemy;
-    private bool isSpawn = false;
+    public GameObject currentEnemy;
+    public bool isSpawn = false;
 
     void Start()
     {
@@ -18,6 +18,7 @@ public class EnemySpawn : MonoBehaviour
     {
         if (currentEnemy == null && !isSpawn)
         {
+            Debug.Log("1");
             StartCoroutine(Spawn());
         }
     }
@@ -36,4 +37,34 @@ public class EnemySpawn : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position + transform.up * 15);
     }
+
+    //private PlayerController playerController;
+    //public GameObject[] enemies;
+    //private GameObject enemy;
+    //private EnemyController enemyController;
+    //private bool noRepeat;
+
+    //private void Start()
+    //{
+    //    int type = Random.Range(0, 2);
+    //    enemy = (GameObject)Instantiate(enemies[type], transform);
+    //    enemyController = enemy.GetComponent<EnemyController>();
+    //    playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+    //}
+
+    //private void Update()
+    //{
+    //    if (!noRepeat && enemyController.enemyState == EnemyController.State.DYING && playerController.curHealth > 0)
+    //        StartCoroutine(SpawnNewEnemy());
+    //}
+
+    //private IEnumerator SpawnNewEnemy()
+    //{
+    //    noRepeat = true;
+    //    yield return new WaitForSeconds(15.0f);
+    //    int type = Random.Range(0, 2);
+    //    enemy = (GameObject)Instantiate(enemies[type], transform);
+    //    enemyController = enemy.GetComponent<EnemyController>();
+    //    noRepeat = false;
+    //}
 }
