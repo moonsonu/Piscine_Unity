@@ -16,6 +16,8 @@ public class Weapon : MonoBehaviour
     public GameObject particle;
     public GameObject bullet;
 
+    //public Bullet bullet;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -36,6 +38,7 @@ public class Weapon : MonoBehaviour
         {
             GameObject spark = Instantiate(particle, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
             Destroy(spark, 0.5f);
+            //bullet.fire();
             GameObject laser = Instantiate(bullet, shootpoint.transform.position, Quaternion.identity);
             laser.transform.position = Vector3.forward * Time.deltaTime;
             //Debug.DrawRay(shootpoint.position, shootpoint.transform.forward, Color.yellow);

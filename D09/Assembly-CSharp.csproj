@@ -60,8 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\D09\Scripts\Bullet.cs" />
     <Compile Include="Assets\D09\Scripts\Enemy.cs" />
     <Compile Include="Assets\D09\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\D09\Scripts\OverlayUI.cs" />
+    <Compile Include="Assets\D09\Scripts\Player.cs" />
     <Compile Include="Assets\D09\Scripts\Weapon.cs" />
     <Compile Include="Assets\D09\Scripts\WeaponController.cs" />
     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
